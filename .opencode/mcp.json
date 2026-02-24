@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "entscheidsuche": {
+      "command": "node",
+      "args": [
+        "/Users/thibault/Documents/legal-assistant/mcp-servers/entscheidsuche-mcp/build/index.js"
+      ],
+      "description": "Search and access Swiss legal case law (jurisprudence) from federal and cantonal courts"
+    },
+    "onlinekommentar": {
+      "command": "node",
+      "args": [
+        "/Users/thibault/Documents/legal-assistant/mcp-servers/onlinekommentar-mcp/build/index.js"
+      ],
+      "description": "Access Swiss legal commentaries from onlinekommentar.ch with multi-language support"
+    }
+  }
+}

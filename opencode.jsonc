@@ -1,0 +1,32 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "default_agent": "openwork",
+  "mcp": {
+    "entscheidsuche": {
+      "type": "local",
+      "command": [
+        "node",
+        "/Users/thibault/Documents/legal-assistant/mcp-servers/entscheidsuche-mcp/build/index.js"
+      ]
+    },
+    "onlinekommentar": {
+      "type": "local",
+      "command": [
+        "node",
+        "/Users/thibault/Documents/legal-assistant/mcp-servers/onlinekommentar-mcp/build/index.js"
+      ]
+    },
+    "control-chrome": {
+      "type": "local",
+      "enabled": true,
+      "command": [
+        "chrome-devtools-mcp"
+      ]
+    },
+    "context7": {
+      "type": "remote",
+      "enabled": true,
+      "url": "https://mcp.context7.com/mcp"
+    }
+  }
+}

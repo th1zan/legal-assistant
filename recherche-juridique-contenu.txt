@@ -1,0 +1,1289 @@
+
+
+--- PAGE 1 ---
+
+Polycopié théorique, version 3.0
+Recherche
+juridique informatisée
+A la croisée de l’informatique et du
+droit
+Alexandre Flückiger, Professeur
+David Krähenbühl, Assistant
+Année académique 2011-2012
+i
+
+--- PAGE 2 ---
+
+Version 1.X : Alexandre Flückiger, Steve Reusser
+Version 2.x – 3.x : Alexandre Flückiger, David Krähenbühl
+
+--- PAGE 3 ---
+
+TABLE DES MATIÈRES
+1. INTRODUCTION...........................................................................................................................1
+2. SOURCES LEGISLATIVES............................................................................................................2‐1
+2.1 DROIT FEDERAL..............................................................................................................................2‐1
+2.1.1 Les différents types d’actes fédéraux..................................................................................2‐1
+2.1.2 Lois fédérales.......................................................................................................................2‐3
+2.1.2.1 La procédure législative.................................................................................................................................2‐3
+2.1.2.1.1 Introduction...........................................................................................................................................2‐3
+2.1.2.1.2 Phase préparlementaire........................................................................................................................2‐3
+A. Impulsion législative....................................................................................................................................2‐3
+B. Initiative législative......................................................................................................................................2‐4
+C. Avant‐projet.................................................................................................................................................2‐4
+D. Rédaction et publication du projet..............................................................................................................2‐5
+2.1.2.1.3 Phase parlementaire..............................................................................................................................2‐5
+2.1.2.1.4 Phase référendaire.................................................................................................................................2‐7
+2.1.2.1.5 Entrée en vigueur...................................................................................................................................2‐7
+2.1.2.2 Publication officielle......................................................................................................................................2‐7
+2.1.2.2.1 Feuille fédérale......................................................................................................................................2‐7
+2.1.2.2.2 Recueil officiel........................................................................................................................................2‐8
+2.1.2.2.3 Recueil systématique.............................................................................................................................2‐9
+2.1.2.3 Structuration................................................................................................................................................2‐10
+2.1.2.3.1 Titre de l’acte.......................................................................................................................................2‐10
+2.1.2.3.2 Préambule............................................................................................................................................2‐11
+2.1.2.3.3 Corps du texte......................................................................................................................................2‐11
+2.1.2.3.4 Dispositions finales..............................................................................................................................2‐12
+2.1.2.3.5 Formule de promulgation....................................................................................................................2‐12
+2.1.2.3.6 Annexes................................................................................................................................................2‐12
+2.1.2.4 Consultation sous forme imprimée.............................................................................................................2‐12
+2.1.2.4.1 Texte ancien.........................................................................................................................................2‐12
+2.1.2.4.2 Texte récent.........................................................................................................................................2‐13
+2.1.2.5 Citation........................................................................................................................................................2‐13
+2.1.2.5.1 Modes de référence.............................................................................................................................2‐13
+2.1.2.5.2 Première citation.................................................................................................................................2‐13
+2.1.2.5.3 Références ultérieures.........................................................................................................................2‐15
+2.1.3 Autres textes fédéraux......................................................................................................2‐15
+2.1.3.1 Introduction.................................................................................................................................................2‐15
+2.1.3.2 Publication...................................................................................................................................................2‐15
+2.1.3.3 Citation........................................................................................................................................................2‐16
+2.1.4 Travaux préparatoires.......................................................................................................2‐17
+2.1.4.1 Feuille fédérale............................................................................................................................................2‐17
+2.1.4.1.1 Publication...........................................................................................................................................2‐17
+2.1.4.1.2 Consultation.........................................................................................................................................2‐17
+2.1.4.1.3 Citation.................................................................................................................................................2‐18
+2.1.4.2 Bulletin officiel de l’Assemblée fédérale......................................................................................................2‐19
+2.1.4.2.1 Publication...........................................................................................................................................2‐19
+2.1.4.2.2 Consultation.........................................................................................................................................2‐19
+2.1.4.2.3 Citation.................................................................................................................................................2‐19
+3. DROIT CANTONAL.....................................................................................................................3‐1
+3.1 INTRODUCTION...............................................................................................................................3‐1
+3.2 DROIT INTERCANTONAL....................................................................................................................3‐1
+i
+
+--- PAGE 4 ---
+
+3.2.1 Définitions...........................................................................................................................3‐1
+3.2.1.1 Conventions...................................................................................................................................................3‐1
+3.2.1.2 Actes législatifs contenant des règles de droit..............................................................................................3‐2
+3.2.2 Conclusion des conventions.................................................................................................3‐2
+3.2.3 Publication des conventions................................................................................................3‐2
+3.2.4 Citation................................................................................................................................3‐3
+3.3 DROIT CANTONAL...........................................................................................................................3‐3
+3.3.1 Généralités..........................................................................................................................3‐3
+3.3.2 Publication...........................................................................................................................3‐3
+3.3.3 Consultation........................................................................................................................3‐4
+3.3.4 Citation................................................................................................................................3‐4
+3.4 DROIT COMMUNAL.........................................................................................................................3‐4
+3.5 DROIT INTERNATIONAL....................................................................................................................3‐4
+3.5.1 Traités internationaux.........................................................................................................3‐5
+3.5.1.1 Généralités.....................................................................................................................................................3‐5
+3.5.1.2 Accords bilatéraux.........................................................................................................................................3‐5
+3.5.1.2.1 Accords bilatéraux I................................................................................................................................3‐5
+3.5.1.2.2 Accords bilatéraux II...............................................................................................................................3‐5
+3.5.2 Soft law...............................................................................................................................3‐6
+4. SOURCES JURISPRUDENTIELLES................................................................................................4‐1
+4.1 JURISPRUDENCE FEDERALE................................................................................................................4‐1
+4.1.1 Introduction.........................................................................................................................4‐1
+4.1.2 Arrêts du Tribunal fédéral...................................................................................................4‐1
+4.1.2.1 Structuration..................................................................................................................................................4‐1
+4.1.2.2 Publication.....................................................................................................................................................4‐2
+4.1.2.3 Consultation sous forme imprimée...............................................................................................................4‐3
+4.1.2.4 Citation..........................................................................................................................................................4‐3
+4.1.2.4.1 Arrêts publiés dans le Recueil officiel....................................................................................................4‐3
+4.1.2.4.2 Arrêts publiés dans le Recueil officiel et dans une revue privée...........................................................4‐4
+4.1.2.4.3 Arrêts non publiés dans le Recueil officiel.............................................................................................4‐4
+4.1.3 Décisions des autres autorités fédérales.............................................................................4‐6
+4.1.3.1 Tribunal pénal fédéral....................................................................................................................................4‐6
+4.1.3.2 Tribunal administratif fédéral........................................................................................................................4‐6
+4.1.3.3 Tribunal militaire de cassation.......................................................................................................................4‐7
+4.1.3.4 Jurisprudence des autorités administratives de la Confédération................................................................4‐7
+4.2 JURISPRUDENCE CANTONALE.............................................................................................................4‐8
+4.2.1 Publication...........................................................................................................................4‐8
+4.2.1.1 Publications officielles et officieuses.............................................................................................................4‐8
+4.2.1.2 Publications générales...................................................................................................................................4‐8
+4.2.2 Citation................................................................................................................................4‐8
+5. SOURCES DOCTRINALES............................................................................................................5‐1
+ii
+
+--- PAGE 5 ---
+
+1. INTRODUCTION
+Avec le développement d’Internet, un nombre croissant de documents législatifs, jurisprudentiels
+et doctrinaux est accessible en ligne.
+La connaissance des techniques de recherche juridique informatisée est indispensable aux juristes
+qui entendent effectuer des recherches de manière rapide et efficace.
+Une recherche efficace, tant sous forme imprimée que sous forme électronique, suppose la
+maîtrise de certaines notions théoriques fondamentales, telles que la procédure législative, la
+structuration des lois et arrêts, ou encore la manière de les citer.
+L’objet de ce polycopié est de fournir l’essentiel de ces notions. Il présente les différentes sources
+en tant que telles, alors que le polycopié pratique (ou le cours dispensé en ligne) les aborde du
+point de vue du chercheur (ou de la chercheuse), en indiquant l’endroit où elles sont publiées et
+comment elles peuvent être consultées.
+Le polycopié pratique effectue de nombreux renvois aux notions abordées dans ce document, en
+fonction des besoins propres à la matière étudiée. Ce polycopié peut donc, à choix, être lu avant
+d’aborder le cours proprement dit de recherche juridique informatisée ou consulté en suivant les
+renvois établis dans le cours.
+Les icônes suivantes sont utilisées dans ce document :
+Exemple
+Pour en savoir plus
+Information
+Mise en garde
+1-1/1
+
+--- PAGE 6 ---
+
+Chapitre 2 – Droit fédéral
+2. SOURCES LEGISLATIVES
+2.1 Droit fédéral
+2.1.1 Les différents types d’actes fédéraux
+Connaître les différents types d’actes fédéraux est indispensable pour le juriste qui entend chercher les
+règles applicables à une situation donnée. L’ensemble du droit fédéral ne se trouve pas, et de loin,
+uniquement dans les lois fédérales !
+Au sens le plus large, la législation fédérale comprend « l’ensemble des actes législatifs édictés ou
+approuvés par les autorités de la Confédération investies du pouvoir législatif ou réglementaire »1.
+Elle ne porte que sur les domaines attribués à la Confédération par la Constitution, en vertu de la
+souveraineté cantonale (art. 3 Cst.2).
+Le tableau suivant récapitule les différents types d’actes édictés par l’Assemblée fédérale (ainsi
+que par le gouvernement et son administration à propos des ordonnances) d’après le critère
+formel de l’assujettissement au référendum et celui, matériel, de la règle de droit.
+1 Pierre Tercier/Christian Roten, La recherche et la rédaction juridiques, 5e éd., Genève 2007, N. 21 (ci-après : Tercier/Roten).
+2 Constitution fédérale de la Confédération suisse, du 18 avril 1999 (RS 101).
+2-1/20
+
+--- PAGE 7 ---
+
+Chapitre 2 – Droit fédéral
+Types d’actes édités par l’Assemblée fédérale (extrait des Directives de la Confédération sur la technique législative, p. 45)
+2-2/20
+
+--- PAGE 8 ---
+
+Chapitre 2 – Droit fédéral
+2.1.2 Lois fédérales
+2.1.2.1 La procédure législative
+2.1.2.1.1 Introduction
+Connaître la procédure d’adoption d’une loi fédérale est important à plus d’un titre en recherche
+juridique.
+Cette connaissance est tout d’abord indispensable pour recenser les travaux préparatoires.
+Déterminer l’historique d’une norme en retrouvant les versions successives, depuis l’avant-projet
+jusqu’au texte en vigueur, retrouver et analyser les commentaires des projets de loi et suivre les
+délibérations aux chambres fédérales permettent à l’interprète de découvrir la volonté du
+législateur pour trouver le sens d’une disposition (interprétation historique subjective).
+La connaissance des étapes de la procédure facilite également la recherche des informations
+susceptibles de fournir des rensignements sur les projets de révision d’une loi fédérale en vigueur
+ou d’adoption d’un texte inédit.
+La procédure d’adoption peut être découpée schématiquement en quatre phases, au cours
+desquelles seront produits des types de documents précis3 :
+• la phase préparlementaire ;
+• la phase parlementaire ;
+• la phase référendaire ;
+• l’entrée en vigueur.
+On notera que ces différentes étapes sont regroupées de manière parfois différente selon les auteurs.
+2.1.2.1.2 Phase préparlementaire
+A. Impulsion législative
+La première étape de la phase préparlementaire est l’impulsion législative, qui se distingue de
+l’initiative législative proprement dite.
+L’impulsion législative est l’acte qui attire l’attention des autorités sur un problème particulier.
+Elle peut naître au sein même des autorités. Elle peut ainsi émaner du Parlement par le biais de
+l’interpellation et de la question (art. 125 LParl4). L’impulsion peut naître au sein du
+gouvernement, le plus souvent à l’instigation de l’administration. Elle peut enfin provenir des
+tribunaux lorsque ceux-ci détectent un problème, voire une erreur, dans le droit positif5.
+3 Voir également Andreas Auer/Georgio Malinverni/Michel Hottelier, Droit constitutionnel suisse, 2ème éd., Volume I, Berne 2006, N.
+1506ss.
+4 Loi sur l’Assemblée fédérale, du 13 décembre 2002 (RS 171.10).
+5 Voir par exemple le Rapport de gestion du Tribunal fédéral 2009, où le Tribinual fédéral relève que « le recours auprès du
+gouvernement cantonal prévu par loi fédérale sur les droits politiques n’est pas approprié dans le cas d’un résultat d’une
+votation fédérale très serré car un gouvernement cantonal n’a pas la compétence pour ordonner un recomptage des voix dans
+d’autres cantons ou pour l’ensemble de la Suisse ».
+2-3/20
+
+--- PAGE 9 ---
+
+Chapitre 2 – Droit fédéral
+L’impulsion peut résulter de l’extérieur et s’introduire dans le Parlement ou l’administration au
+travers de différents contacts (lobbying).
+De manière indirecte, l’initiative populaire constitutionnelle (art. 139 Cst.) et les pétitions (art. 33
+Cst.) sont des moyens d’impulsion législative à disposition du peuple.
+B. Initiative législative
+L’initiative législative proprement dite peut être définie comme l’ensemble des moyens
+constitutionnels et législatifs prévus pour déclencher formellement la procédure législative. Elle
+peut procéder :
+• du Conseil fédéral (art. 181 Cst.) ;
+• de l’Assemblée fédérale (art. 160 al. 1 Cst.) par le biais de la motion (art. 120ss LParl), du
+postulat (art. 123s LParl) et de l’initiative parlementaire (art. 107ss LParl) ;
+• des cantons (art. 115ss LParl ; art. 160 al. 1 Cst.).
+C. Avant-projet
+La très grande majorité des projets de loi est présentée par le Conseil fédéral, à l’instigation de
+son administration ou du Parlement (voir art. 7 LOGA6). Dans ce cas, un avant-projet est élaboré soit
+par l’administration elle-même (département ou office compétent), soit par un groupe de travail
+interne ou extérieur à l’administration, soit par une commission d’experts n’appartenant pas à
+l’administration (voir art. 57ss LOGA). Le nombre de membres oscille en général entre dix et
+quinze personnes.
+Cette phase est propice à l’ouverture de la procédure législative à divers groupes d’intérêts, car de
+tels groupes de travail et commissions ne sont pas composés seulement d’experts scientifiques
+mais comprennent également des représentants de divers groupes d’intérêts et des cantons. Les
+experts sont avant tout des juristes, ou encore des économistes. Les autres disciplines scientifiques
+ne sont représentées que de manière sporadique, situation critiquée en doctrine.
+Après avoir été soumis à une procédure de consultation interne entre les différents offices
+(procédure de consultation des offices) puis entre les départements de l’administration
+(procédure de co-rapport), l’avant-projet est soumis à une procédure de consultation élargie
+(procédure de consultation).
+La loi fédérale sur la consultation (LCo)7, et son ordonnance (OCo)8, réglementent cette procédure.
+Les cantons, les partis politiques et les milieux intéressés, c’est-à-dire, à titre d’illustration, les
+organisations professionnelles (banquiers, paysans, etc.), les organisations syndicales ou patronales
+ou d’autres groupements touchés par le projet, sont invités en vertu de l’art. 147 Cst. à se
+prononcer sur les actes législatifs importants et sur les autres projets de grande portée lors des
+travaux préparatoires, ainsi que sur les traités internationaux importants. L’art. 45 al. 1 Cst. répète
+que les cantons participent au processus d’élaboration de la législation. Les organisations et
+personnes qui n’ont pas été officiellement consultées peuvent recevoir les documents sur
+demande et communiquer leur avis à l’administration. Même des Etats limitrophes ainsi que la
+Communauté européenne sont susceptibles d’être sporadiquement invités à participer à la
+consultation.
+6 Loi sur l’organisation du gouvernement et de l’administration, du 21 mars 1997 (RS 172.010).
+7 Loi fédérale sur la procédure de consultation, du 18 mars 2005 (RS 172.061).
+8 Ordonnance sur la procédure de consultation, du 17 août 2005 (RS 172.061.1).
+2-4/20
+
+--- PAGE 10 ---
+
+Chapitre 2 – Droit fédéral
+Le délai imparti aux organismes consultés pour donner leur avis est, en règle générale, de trois
+mois (art. 7 al. 2 LCo). Des délais plus courts peuvent être fixés en cas d’urgence (art. 7 al. 3 let. a
+LCo).
+Le texte de loi n’est pas donné isolément aux organismes à consulter. L’invitation à participer à la
+procédure de consultation comprend l’avant-projet de loi, les commentaires qui le complètent et,
+parfois, des variantes ainsi que des expertises.
+En principe, la procédure est écrite (art. 7 al. 1 LCo), mais elle peut être organisée sous forme de
+conférence, soit entièrement, soit en partie seulement. La mise sur pied d’une conférence se
+justifie lorsque la réalisation du projet est urgente (art. 7 al. 3 let. b LCo).
+À l’issue du délai imparti, l’administration récapitule les résultats de la consultation, résume les
+exigences, les suggestions et les opinions émises puis les évalue (art. 8 LCo). Elle soumet ensuite au
+gouvernement une proposition quant à la suite à donner au projet (art. 18ss OCo).
+Les documents soumis à la consultation, les avis des organismes consultés et les résultats sont
+publics (art. 9 al. 1 LCo). Les avis exprimés sont accessibles au public après l'expiration du délai de
+consultation (art. 9 al. 1 let. b LCo). Le rapport rendant compte des résultats de la consultation,
+quant à lui, est accessible après que le Conseil fédéral en a pris connaissance (art. 9 al. 1 let. c LCo).
+D. Rédaction et publication du projet
+Si le Conseil fédéral donne suite à l’avant-projet, le département compétent est chargé de rédiger
+le projet de loi et le message dans le sens donné par le gouvernement. Le Conseil fédéral, à la
+suite des procédures de consultation internes (à nouveau une procédure de consultation des
+offices suivie d’une procédure de co-rapport), décide de publier le projet de loi et le message dans
+la Feuille fédérale (art. 13 al. 1 let. a LPubl9).
+Le message doit contenir un certain nombre de points importants dans l’optique d’un processus
+législatif transparent : il doit en particulier renseigner sur les principaux points de vue exprimés et
+sur les solutions de rechange rejetées au stade préliminaire de la procédure législative (art. 141 al.
+2 let. c LParl).
+2.1.2.1.3 Phase parlementaire
+La phase parlementaire débute par l’examen du projet, par une commission parlementaire
+permanente ou ad hoc. Les commissions peuvent inviter à leurs séances des membres du
+gouvernement ainsi que des fonctionnaires du gouvernement. Elles peuvent aussi faire appel à des
+experts (art. 45 al. 1 let. b LParl). A cette occasion, les organisations intéressées ont encore la
+possibilité de se faire entendre. Plus que le débat en plénum, l’examen en commission
+parlementaire constitue l’étape décisive pour l’avenir du projet. Le projet est également examiné
+avant la séance plénière par les groupes parlementaires.
+Le projet est ensuite traité en plénum. Les présidents des deux chambres se concertent pour
+décider dans quelle chambre la discussion doit avoir lieu en premier (art. 84 LParl). La délibération
+comporte trois étapes.
+Elle débute par le débat sur l’entrée en matière. Celui-ci commence par la présentation des deux
+rapports explicatifs (français et allemand) par les rapporteurs de la commission parlementaire. Il se
+poursuit par l’avis des groupes politiques et des députés sur l’opportunité du projet et s’achève par
+9 Loi fédérale sur les recueils du droit fédéral et la Feuille fédérale, du 18 juin 2004 (RS 170.512).
+2-5/20
+
+--- PAGE 11 ---
+
+Chapitre 2 – Droit fédéral
+les réponses des rapporteurs et l’avis du conseiller fédéral responsable du projet. La première
+chambre possède, à ce stade, trois possibilités :
+• soit elle décide que la nouvelle loi est inutile et n’entre pas en matière ;
+• soit elle renvoie le projet au Conseil fédéral ou à la commission, pour révision, et demande
+un nouveau projet (art. 75 al. 1 LParl) ;
+• soit elle entre en matière sur le projet (art. 74 al. 1 LParl).
+Après que l’entrée en matière a été décidée, le projet est discuté en détail article par article (art.
+74 al. 2 LParl). Le conseil peut décider de discuter le projet de loi par chapitre ou dans son
+ensemble. Durant cette phase, les députés peuvent prendre la parole et faire des propositions
+d’amendement, puis ils passent au vote.
+Une fois que la première discussion d’un projet est close, le vote sur l’ensemble a lieu (art. 74 al. 4
+LParl).
+Ces trois étapes sont réitérées dans le deuxième conseil. Le projet est transmis à la commission
+compétente, puis débattu en plénum. La différence à ce stade réside dans le fait que les
+parlementaires disposent non seulement du projet du Conseil fédéral et des propositions de la
+commission parlementaire, mais également de la version adoptée par le conseil prioritaire. Les
+différentes versions sont collationnées dans un document les présentant côte à côte sous forme de
+grand tableau appelé dépliant (ou drapeau, Fahne, en allemand).
+Si les deux textes ne sont pas identiques, la procédure d’élimination des divergences s’ouvre alors.
+Elle est appelée « procédure de la navette » dans le jargon parlementaire. La commission du
+premier conseil examine les divergences et fait des propositions à l’attention du conseil. La
+nouvelle délibération sera en principe exclusivement limitée aux questions sur lesquelles
+l’entente n’a pas pu être trouvée (art. 89 al. 2 LParl). Après la discussion et le vote dans le premier
+conseil, la commission de l’autre conseil examine les divergences subsistantes et adresse une
+proposition à son conseil. La procédure se poursuit jusqu’à ce qu’un accord s’établisse entre les
+deux chambres (art. 89 al. 1 LParl).
+Lorsque les divergences persistent après trois délibérations, une conférence de conciliation,
+composée de membres des commissions du Conseil national et du Conseil des Etats, se réunit afin
+de trouver une entente (art. 91ss LParl). Si la tentative de conciliation échoue ou si la proposition
+de conciliation est rejetée par un conseil ou par les deux (art. 93 al. 2 LParl), l’ensemble du projet
+est abandonné.
+Après l’élimination des divergences éventuelles, le texte est examiné par la commission
+parlementaire de rédaction (art. 56ss LParl et art. 3 de l’ordonnance sur la Commission de
+rédaction10). Le projet est alors adopté en vote final dans chacune des deux chambres (art. 81 LParl).
+10 Ordonnance de l’Assemblée fédérale sur la Commission de rédaction, du 3 octobre 2003 (RS 171.105).
+2-6/20
+
+--- PAGE 12 ---
+
+Chapitre 2 – Droit fédéral
+Vous pouvez tester et développer vos connaissances sur le site Internet du Parlement11, sur lequel
+vous trouverez une présentation interactive récapitulant la procédure législative fédérale, ainsi que
+des questions à choix multiples interactives. Depuis la page d’accueil du site, cliquez sur la rubrique
+JuniorParl / CiviCampus / Tellvetia, lancez l'application CiviCampus puis sélectionnez les liens qui
+se trouvent dans la rubrique Naissance d'une loi.
+2.1.2.1.4 Phase référendaire
+La phase référendaire débute par la publication de la loi adoptée par le parlement dans la Feuille
+fédérale (art. 13 al. 1 let. e LPubl) qui fait courir le délai de 100 jours durant lequel le référendum
+peut être demandé par 50’000 citoyens ou citoyennes (art. 141 Cst.).
+Si le référendum n’est pas demandé, la loi est publiée dans le Recueil officiel du droit fédéral (art. 2
+let. b LPubl), en règle générale au moins cinq jours avant son entrée en vigueur (art. 7 LPubl), puis
+ensuite dans le Recueil systématique, collection des actes législatifs régulièrement mise à jour et
+ordonnée par matière, qui permet de connaître la version consolidée de chaque acte législatif
+(art. 11 LPubl).
+Si le référendum est demandé et qu’il aboutit, une votation populaire est organisée. La loi ne peut,
+en principe, pas entrer en vigueur avant que le Conseil fédéral ait constaté le résultat définitif de la
+votation par un arrêté de validation publié dans la Feuille fédérale (art. 15 LDP12).
+2.1.2.1.5 Entrée en vigueur
+La loi entre en principe en vigueur à la date qu’elle fixe. En pratique, ce principe est devenu
+l’exception car, dans la plupart des cas, la loi délègue au Conseil fédéral la détermination de la date
+d’entrée en vigueur.
+Seules les lois fédérales urgentes peuvent entrer en vigueur immédiatement lors de leur adoption
+par le Parlement (art. 165 al. 1 Cst.).
+2.1.2.2 Publication officielle
+2.1.2.2.1 Feuille fédérale
+Avant le vote final, la version définitive des textes de loi est arrêtée par la Commission de rédaction
+du Parlement (art. 57 al. 1 LParl), qui vérifie également leur concordance dans les trois langues
+officielles (art. 57 al. 2 LParl).
+Après son adoption par les deux chambres (art. 156 al. 2 Cst.), la loi fédérale est publiée dans la
+Feuille fédérale (FF ; art. 13 al. 1 let. e LPubl).
+Organe officiel de la Confédération, la Feuille fédérale est publiée en même temps dans les trois
+langues officielles (art. 14 al. 1 LPubl), sous forme de cahiers hebdomadaires.
+11 http://www.parlement.ch
+12 Loi fédérale sur les droits politiques, du 17 décembre 1976 (RS 161.1).
+2-7/20
+
+--- PAGE 13 ---
+
+Chapitre 2 – Droit fédéral
+La version publiée dans la Feuille fédérale ne correspond à la version de la loi en vigueur que si le
+délai référendaire est échu et qu’il n’a pas été utilisé ou si la loi a été acceptée en référendum, et
+qu’elle n’a pas subi de modification ultérieurement.
+2.1.2.2.2 Recueil officiel
+Lorsque le délai référendaire est expiré sans avoir été utilisé ou si la loi a été acceptée en votation
+populaire, la loi est promulguée. La formule de promulgation est publiée dans le Recueil officiel du
+droit fédéral (RO). Elle n’est pas reproduite dans le Recueil systématique.
+Le Recueil officiel du droit fédéral récapitule dans l’ordre chronologique et de manière continue
+l’ensemble des actes législatifs fédéraux publiés. Il est publié en fascicules hebdomadaires (art. 1
+al. 1 OPubl13).
+Formule de promulgation de la loi fédérale sur l’application
+à titre provisoire de traités internationaux
+La loi doit être publiée dans le Recueil officiel en règle générale au moins cinq jours avant son
+entrée en vigueur (art. 7 al. 1 LPubl). Le Tribunal fédéral a reconnu que ce principe était un
+impératif de l’Etat de droit (ATF 125 I 182, 186).
+Seule la version publiée dans l’édition imprimée du Recueil officiel fait foi (art. 9 al. 1 LPubl).
+13 Ordonnance sur les recueils du droit fédéral et la Feuille fédérale, du 17 novembre 2004 (RS 170.512.1).
+2-8/20
+
+--- PAGE 14 ---
+
+Chapitre 2 – Droit fédéral
+Lorsqu’on recherche la version originale d’un texte de loi, c’est donc dans le RO imprimé qu’il doit
+être recherché.
+2.1.2.2.3 Recueil systématique
+La loi en vigueur est ensuite publiée dans le Recueil systématique du droit fédéral (RS).
+Le Recueil systématique rassemble l’ensemble des actes législatifs fédéraux en vigueur à la date de
+sa dernière mise à jour, selon une classification systématique et non plus chronologique (voir
+Préface du Recueil systématique du droit fédéral).
+Les matières sont regroupées dans des chapitres et numérotées de manière décimale.
+Organisation et numérotation des matières
+Les versions des lois reproduites tiennent compte de toutes les modifications apportées depuis
+leur adoption. Ces versions sont dites consolidées. Elles se révèlent d’usage très pratique.
+Le Recueil systématique n’a qu’une portée subsidiaire par rapport au Recueil officiel, puisque seule
+la version imprimée de ce dernier fait foi (art. 9 al. 1 LPubl). Le Recueil systématique n’a plus de
+force obligatoire négative depuis l’entrée en vigueur de la loi sur les publications officielles, du 15
+mai 1987, principe repris dans l’actuelle loi sur les recueils du droit fédéral et la Feuille fédérale. Il
+constitue uniquement un moyen d’information. Seul le Recueil officiel possède donc force
+obligatoire négative.
+Il est donc exclu de se soustraire à un acte législatif en vigueur en se prévalant du fait que cet acte
+n’a pas été publié au Recueil systématique.
+2-9/20
+
+--- PAGE 15 ---
+
+Chapitre 2 – Droit fédéral
+Une motion visant à conférer au Recueil officiel, au Recueil systématique et à la Feuille fédéral
+électroniques la même force obligatoire qu’aux textes publiés sous forme imprimée a été déposée
+le 18 juin 2007 au Conseil national14. Le Conseil fédéral en a proposé le rejet le 28 août 2007. Cette
+motion a été classée sans débat le 12 juin 2009.
+A l’échelon cantonal, Fribourg est le seul canton à prévoir la possibilité d’accorder, sous certaines
+conditions, force obligatoire aux actes et publications officielles diffusés sous forme électronique (art.
+8 al. 3 LPAL).
+Les textes paraissent simultanément dans les trois langues officielles (art. 14 al. 1 LPubl). Sous
+forme imprimée, le Recueil systématique est présenté en feuillets mobiles rassemblés en
+classeurs.
+2.1.2.3 Structuration
+Rechercher puis trouver un texte de loi est certainement l’exigence la plus élémentaire que doit
+maîtriser tout juriste. Si cette condition est nécessaire, elle n’est pourtant pas suffisante : il faut
+encore être en mesure de décrypter le texte, afin d’en tirer le plus d’informations pertinentes
+pour résoudre les problèmes posés. Connaître la structure des lois fédérales permet de les
+consulter de manière efficace et d’en tirer toutes les informations pertinentes.
+Les rédacteurs des lois fédérales conçoivent et structurent leurs textes en se référant à des directives
+précises édictées par l’administration. On citera :
+- le Guide pour l’élaboration de la législation fédérale15, publié en français et en allemand par l’Office
+fédéral de la justice en 2007 (chapitres 1 et 2 mis à jour en 2009 sous forme électronique) ;
+- les Directives sur la technique législative16, publiées en français, allemand et italien par la
+Chancellerie fédérale en collaboration avec l’Office fédéral de la justice. La dernière mise à jour date de
+2003 ;
+- les aide-mémoires17 remplaçant ou complétant ces Directives, compte tenu notamment de
+l’évolution du droit de l’Union européenne ;
+- le Guide linguistique des lois et des ordonnances de la Confédération18 ;
+- les Instructions de la Chancellerie fédérale sur la présentation des textes officiels en français du 7
+septembre 199819, publiées par les Services linguistiques centraux de la Chancellerie fédérale.
+La structure des lois fédérales obéit au schéma suivant :
+2.1.2.3.1 Titre de l’acte
+Le titre fournit des indications sur :
+• la forme de l’acte (loi, arrêté, ordonnance, réglement) ;
+14 Motion Ruedi Noser, du 18 juin 2007, CN 07.3338.
+15 http://www.ofj.admin.ch/bj/fr/home/themen/staat_und_buerger/legistik/gesetzgebungsleitfaden.html.
+16 http://www.bk.admin.ch/themen/gesetz/00050/index.html?lang=fr.
+17 http://www.bk.admin.ch/themen/gesetz/00050/index.html?lang=fr.
+18 http://www.bk.admin.ch/dokumentation/publikationen/00292/01597/index.html?lang=fr.
+19 http://www.bk.admin.ch/dokumentation/sprachen/04908/04910/index.html?lang=fr.
+2-10/20
+
+--- PAGE 16 ---
+
+Chapitre 2 – Droit fédéral
+• l’organe dont il émane lorsqu’il s’agit d’une ordonnance d’un département ou d’un office
+ou des autres unités administratives de la Confédération20) ;
+• la date d’adoption ;
+• l’objet de la loi (la matière qu’elle régit) ;
+• le sigle officiel de la loi (abréviation supplémentaire ajoutée facultativement et établie à
+partir des initiales de l’acte destiné à en faciliter la citation).
+Loi fédérale du 19 décembre 1986 contre la concurrence déloyale (LCD)
+2.1.2.3.2 Préambule
+Le préambule indique :
+• de quelle autorité émane l’acte ;
+• les bases juridiques sur lesquelles l’acte repose :
+o base constitutionnelle ou légale, et
+o référence au Message du Conseil fédéral ou au rapport d’une commission.
+« L’Assemblée fédérale de la Confédération suisse,
+vu l’art. 173, al. 2, de la Constitution (Cst.), vu le message du Conseil fédéral du 22 octobre 2003,
+arrête : »
+2.1.2.3.3 Corps du texte
+Le corps du texte contient les règles de droit proprement dites.
+La partie introductive comprend en règle générale des dispositions qui définissent le cadre de
+l’acte législatif :
+• les buts (dispositions utiles pour l’interprétation téléologique) ;
+• le champ d’application (personnel et matériel) ;
+• les définitions (précisions utiles lorsque les termes utilisés dans l’acte sont ambigus,
+polysémiques ou très techniques).
+Art. 1 LCD (disposition précisant le but), art. 1 LDA (disposition précisant le champ d’application),
+art. 2 LDA (définition).
+La partie principale comprend :
+• les règles matérielles (normes de comportement, sanctions, etc.) ;
+20 Chancellerie fédérale, Directives de technique législative, Berne, 2003, N.134
+2-11/20
+
+--- PAGE 17 ---
+
+Chapitre 2 – Droit fédéral
+• les règles formelles (autorités compétentes, procédure applicable, etc.).
+2.1.2.3.4 Dispositions finales
+Les dispositions finales précisent les conditions d’exécution de l’acte. Elles sont structurées de la
+manière suivante :
+• les clauses d’exécution ;
+• les clauses abrogatoires ou modificatrices ;
+• les dispositions transitoires ;
+• la clause référendaire (selon le type d’acte) ;
+• les modalités ou la de l’entrée en vigueur ;
+• les signatures (non reproduites au Recueil systématique).
+2.1.2.3.5 Formule de promulgation
+La formule de promulgation est l’acte par lequel un organe atteste de la validité d’un texte
+législatif. Elle comprend :
+• la constatation que le référendum n’a pas été demandé ou, s’il l’a été, qu’il n’a pas abouti
+(pour les actes soumis au référendum) ;
+• l’organe chargé de fixer la date d’entrée en vigueur (si celle-ci n’a pas été fixée) ;
+• la signature de l’organe chargé de publier et de promulguer l’acte avec la date de
+référence.
+2.1.2.3.6 Annexes
+La loi peut être suivie d’annexes comprenant :
+• les dispositions abrogeant ou modifiant le droit en vigueur, lorsque celles-ci font,
+ensemble, plus d’une page ;
+• des dispositions dont l’objet s’insère mal dans la systématique de l’acte ou des
+représentations graphiques, si elles sont nécessaires (pictogrammes, graphiques, tableaux,
+tarifs, longue liste de définitions, etc.).
+2.1.2.4 Consultation sous forme imprimée
+Afin de retrouver une norme en vigueur à un moment précis dans une bibliothèque juridique, il
+faut procéder différemment selon que la loi à rechercher est récente ou non.
+2.1.2.4.1 Texte ancien
+La marche à suivre est la suivante lorsque la loi à rechercher n’est pas récente. Il faut :
+• se procurer le dernier recueil du répertoire systématique ;
+• y localiser le texte recherché et son numéro décimal ;
+• retrouver ce texte dans le volume correspondant du Recueil systématique qui donne la
+version valable à la date de la dernière mise à jour ;
+2-12/20
+
+--- PAGE 18 ---
+
+Chapitre 2 – Droit fédéral
+• vérifier dans les exemplaires du Recueil officiel postérieurs à cette date si le texte en
+question n’a pas été révisé depuis lors, s’il n’a pas été remplacé ou si une nouvelle loi n’est
+pas entrée en vigueur.
+Le répertoire systématique, publié annuellement, facilite la consultation du Recueil systématique
+sous sa forme imprimée, car il comprend en particulier une table alphabétique des matières.
+2.1.2.4.2 Texte récent
+Si le texte visé est postérieur à la date déterminante du Répertoire systématique, il faut feuilleter
+les derniers exemplaires du Recueil officiel en remontant dans le temps.
+2.1.2.5 Citation
+Connaître les manières correctes de citer des lois fédérales est important à plus d’un titre pour le ou la
+juriste. Cette connaissance lui permet notamment, à la lecture d’un texte, de comprendre à quelles
+sources il est fait allusion et dans quels documents elles figurent. Quand il ou elle rédige, cette
+connaissance lui permet d’effectuer des citations qui ne prêtent pas à confusion. En outre, lorsqu’on
+effectue des recherches sur Internet, il est particulièrement important de connaître les manières
+officielles de citer, afin de pouvoir saisir les termes adéquats dans les masques de recherche.
+2.1.2.5.1 Modes de référence
+Il n’existe pas, en pratique, de mode de citation unique des lois fédérales dans les textes juridiques
+(la même remarque vaut pour la jurisprudence et la doctrine). Chaque auteur rédige selon ses
+propres préférences (ou ses propres directives s’il s’agit d’institutions). L’essentiel est, pour le
+rédacteur ou la rédactrice, d’opter pour un mode déterminé, suffisamment précis pour que le
+lecteur ou la lectrice soit en mesure d’identifier et de retrouver les sources citées, et de s’y tenir
+fermement tout au long du texte.
+Dans un texte, lorsque des lois sont citées, on distingue généralement la première citation des
+citations ultérieures.
+2.1.2.5.2 Première citation
+Lors de la première citation d’une loi fédérale dans un texte, la référence doit être complète.
+Elle comprend :
+1. l’intitulé exact ;
+Loi fédérale sur la surveillance de la correspondance par poste et télécommunication du 6 octobre
+2000 (LSCPT).
+2-13/20
+
+--- PAGE 19 ---
+
+Chapitre 2 – Droit fédéral
+On ne débute en général pas l’intitulé de la loi par une majuscule lorsqu’il est inséré dans une phrase
+(autre solution : Tercier/Roten, N. 1884) : [art. x de la loi fédérale…] à la place de [art. x de la Loi
+fédérale …]. L’abréviation est précédée chez certains auteurs d’un signe « = » : « =LSCPT » à la place
+de « LSCPT ».
+L’expression « loi fédérale » est parfois abrégée par « LF ».
+« LF du 6 octobre 2000 sur … » à la place de « Loi fédérale du 6 octobre 2000 sur … ».
+Lorsque l’acte est suffisamment connu (tel est par exemple le cas du CC ou du CP), la première
+référence complète n’est pas nécessaire.
+2. la disposition à laquelle il est renvoyé.
+Les abréviations utilisées dans la citation de dispositions légales sont les suivantes :
+• art. article
+• al. alinéa
+• let. lettre
+• ch. chiffre
+• phr. phrase
+En règle générale, la référence complète à une loi fédérale se limite au seul Recueil systématique.
+Loi fédérale du 6 octobre 2000 sur la surveillance de la correspondance par poste et
+télécommunication (LSCPT) (RS 780.1).
+Lors de la citation d’un acte récent, la référence était traditionnellement faite au Recueil officiel,
+complétée de préférence par le numéro que l’acte prendra dans le Recueil systématique. Ce numéro
+de Recueil systématique figure soit en pied de page de la première page de la loi publiée au Recueil
+officiel, soit dans la colonne de droite de la version Internet du Recueil officiel.
+2-14/20
+
+--- PAGE 20 ---
+
+Chapitre 2 – Droit fédéral
+Loi fédérale du 6 octobre 2000 sur la surveillance de la correspondance par poste et
+télécommunication (LSCPT), RO 2001 3096 (RS 780.1).
+Cette règle s’est aujourd’hui estompée au profit d’une référence limitée au Recueil systématique, ce
+dernier étant continuellement mis à jour sur Internet. La référence au Recueil officiel est bien sûr
+imposée pour citer des textes qui ne sont plus en vigueur.
+2.1.2.5.3 Références ultérieures
+Dans la suite du texte, la référence peut être abrégée.
+art. 17 al. 2 LSCPT.
+Les abréviations courantes sont utilisées.
+Sur d’autres manières de citer, voir Tercier/Roten, N. 1886s.
+2.1.3 Autres textes fédéraux
+2.1.3.1 Introduction
+La législation fédérale ne se limite pas à la loi fédérale au sens formel. D’autres textes fédéraux
+contiennent des règles de droit. Tel est notamment le cas :
+• de la Constitution fédérale, et
+• des ordonnances législatives.
+D’autres textes fédéraux ne contiennent pas de règle de droit. Tel est le cas :
+• des ordonnances administratives, et
+• des arrêtés fédéraux.
+Enfin, les actes juridiques spécifiques, les actes de planification et les actes étatiques non
+obligatoires (soft law) doivent encore être mentionnés.
+2.1.3.2 Publication
+Contrairement à la Constitution et aux ordonnances législatives, les ordonnances administratives,
+les actes de planification et les actes étatiques non obligatoires ne sont en principe pas publiés
+officiellement.
+2-15/20
+
+--- PAGE 21 ---
+
+Chapitre 2 – Droit fédéral
+Les instructions et communications du Conseil fédéral, de l’administration fédérale ainsi que
+d’organisations ou de personnes de droit public ou de droit privé qui sont chargées de tâches
+administratives, mais qui ne font pas partie de l’administration fédérale, peuvent être publiées
+dans la Feuille fédérale (art. 13 al. 2 LPubl).
+Dans ce cas, la Feuille fédérale fait office d’organe de publication subsidiaire même si aucune loi
+spéciale ne le prescrit expressément. Le Conseil fédéral a réaffirmé sa volonté de maintenir une
+pratique restrictive en la matière, rappelant, « face à l’important volume de textes qui se prêtent à
+une publication dans la Feuille fédérale, […] [de] se borner à ne publier dans cette dernière que les
+textes qui déploient certains effets externes ou qui revêtent une importance à caractère général »
+(FF 2003 7070).
+La loi peut prévoir l’obligation ou la possibilité de publier certains actes étatiques non
+obligatoires, par exemple les constatations et recommandations du Préposé fédéral à la protection
+des données et à la transparence (art. 30 al. 2 LPD21), les avis et recommandations en matière de
+sécurité aérienne (art. 34 al. 3 OEAA22) ou les recommandations des commissions de surveillance
+(art. 158 al. 3 LParl).
+Sont publiés dans le Recueil officiel la Constitution fédérale, les ordonnances de l’Assemblée
+fédérale et celles du Conseil fédéral, les autres actes normatifs édictés par des autorités fédérales
+ainsi que par des organisations ou des personnes de droit public ou de droit privé qui sont
+chargées de tâches administratives mais qui ne font pas partie de l’administration fédérale, les
+arrêtés fédéraux sujets au référendum, les arrêtés fédéraux portant approbation de traités
+internationaux ainsi que les arrêtés fédéraux simples, si l’Assemblée fédérale le décide (art. 2
+LPubl).
+On retrouve dans le Recueil systématique les actes qui ont été publiés dans le Recueil officiel et
+qui sont en vigueur (art. 11 al. 1 LPubl).
+Les ordonnances du Tribunal fédéral sont publiées dans le Recueil officiel des arrêts du Tribunal
+fédéral (ATF).
+ATF 116 III 49, 93 III 113.
+2.1.3.3 Citation
+La Constitution fédérale est citée de manière abrégée Cst. Le sigle officiel est suivi d’un point.
+« … selon l’art. 12 Cst., quiconque est dans une situation de détresse a le droit d’être aidé … ».
+21 Loi fédérale sur la protection des données, du 19 juin 1992 (RS 235.1).
+22 Ordonnance relative aux enquêtes sur les accidents d’aviation et sur les incidents graves, du 23 novembre 1994 (RS 746.126.3).
+2-16/20
+
+--- PAGE 22 ---
+
+Chapitre 2 – Droit fédéral
+Cette précision est un exemple typique de notion à connaître absolument en recherche juridique
+informatisée. Dans le recueil systématique électronique, par exemple, la recherche d’un article
+constitutionnel sans utiliser le point après l’abréviation « Cst » ne permet d’obtenir aucun résultat !
+La citation des ordonnances législatives et des arrêtés fédéraux suit les mêmes règles que celle des
+lois fédérales.
+Première citation : Ordonnance du 31 octobre 2001 sur la surveillance de la correspondance par poste
+et télécommunication (OSCPT) (RS 780.11).
+Référence ultérieure : art. 17 al. 2 OSCPT.
+La référence aux actes de planification et aux actes étatiques non obligatoires n’est pas
+définitivement établie. Elle s’inspire des solutions retenues pour les actes législatifs classiques.
+2.1.4 Travaux préparatoires
+2.1.4.1 Feuille fédérale
+2.1.4.1.1 Publication
+La Feuille fédérale est l’organe officiel de la Confédération par lequel divers documents tels que
+messages, rapports, directives ou résultats des scrutins populaires sont rendus publics (art. 13
+LPubl).
+Elle est publiée dans les trois langues officielles que sont l’allemand, le français et l’italien (art. 14
+al. 1 LPubl).
+La Feuille fédérale contient notamment :
+• les projets de lois fédérales que le Conseil fédéral soumet au Parlement avec un texte
+explicatif appelé Message ;
+• les lois après leur adoption par l’Assemblée fédérale afin de permettre l’exercice du droit
+de référendum (art. 13 al. 1er let. e LPubl) ;
+• l’aboutissement ou non d’un référendum par la Chancellerie fédérale (art. 66 LDP) ;
+• l’arrêté de validation de la votation par le Conseil fédéral lorsque le référendum a été
+demandé (art 15 al. 2 LDP).
+2.1.4.1.2 Consultation
+La consultation de la Feuille fédérale sous sa forme imprimée est facilitée par des tables des
+matières, relativement sommaires.
+Jusqu’en 1998, une table des matières était publiée à la fin de chaque volume. Puisque ces tables
+ont été établies cumulativement, il suffit de consulter celle du dernier volume annuel.
+Dès le 1er janvier 1998, les tables des matières sont publiées trimestriellement. Elles sont placées
+au début du volume en question et sont également établies cumulativement (la dernière table en
+2-17/20
+
+--- PAGE 23 ---
+
+Chapitre 2 – Droit fédéral
+date reprend les données figurant dans les tables trimestrielles précédentes au cours d’une même
+année de référence).
+Si le texte à rechercher est un Message du Conseil fédéral ou un projet de loi et si la loi est déjà
+parue dans le Recueil officiel, la méthode la plus efficace consiste à consulter directement la
+référence dans une note qui complète le préambule du texte de loi en cause. Dans l’exemple ci-
+dessous, la référence est donnée dans la note de bas de page (FF 1999 271) :
+LHES – Première page
+2.1.4.1.3 Citation
+Jusqu’en 1998, la Feuille fédérale était conçue pour être reliée. La pagination recommençait au
+début de chaque volume. Depuis le 1er janvier 1998, elle est publiée dans des classeurs analogues à
+ceux du Recueil officiel et du Recueil systématique. La pagination demeure cependant différente
+dans les trois versions linguistiques. L’indication du numéro de volume devient en revanche
+superflue.
+Le mode de citation d’un texte paru dans la Feuille fédérale diffère donc en fonction de son année
+de parution :
+• avant le 1er janvier 1998, toute référence à un texte dans la Feuille fédérale comprend :
+2-18/20
+
+--- PAGE 24 ---
+
+Chapitre 2 – Droit fédéral
+o l’abréviation officielle ;
+o l’indication du volume annuel ;
+o l’indication de la page ou des pages visées.
+Message du 16 juin 1997 relatif à un arrêté fédéral instituant des mesures visant à équilibrer le
+budget, FF 1997 IV 199ss.
+• après le 1er janvier 1998, toute référence à un texte dans la Feuille fédérale comprend :
+o l’abréviation officielle ;
+o l’indication de la page ou des pages visées.
+Message du 22 mai 2002 relatif à une ordonnance de l’Assemblée fédérale concernant les taux
+d’alcoolémie limites admis en matière de circulation routière, FF 2002 6369.
+2.1.4.2 Bulletin officiel de l’Assemblée fédérale
+2.1.4.2.1 Publication
+Le Bulletin officiel de l’Assemblée fédérale (BO) reproduit l’intégralité des délibérations du
+Conseil national, du Conseil des Etats et de l’Assemblée fédérale (chambres réunies) (art. 4 al. 1
+LParl ; voir également art. 158 Cst. sur la publicité des séances des conseils).
+Le texte des projets est publié en français et en allemand. Les interventions des députés sont
+consignées dans la langue dans laquelle elles ont été tenues.
+Sur l’évolution historique du Bulletin officiel, voir Tercier/Roten, N. 207ss.
+Depuis 1907, les procès-verbaux sont réunis en deux volumes imprimés : l’un concerne le Conseil
+national (BO CN), l’autre le Conseil des Etats (BO CE).
+2.1.4.2.2 Consultation
+Une table des matières et une table des intervenants annuelles facilitaient la consultation du
+Bulletin officiel sous sa forme imprimée. Depuis 1999, de telles tables annuelles ne sont plus
+contenues à la fin du dernier volume de l’année. Une recherche électronique s’impose donc.
+2.1.4.2.3 Citation
+La référence au Bulletin officiel comprend :
+• l’abréviation officielle ;
+• l’indication du Conseil visé ;
+• le volume annuel ;
+• la ou les pages citées.
+2-19/20
+
+--- PAGE 25 ---
+
+Chapitre 2 – Droit fédéral
+BO CE 2002 24.
+2-20/20
+
+--- PAGE 26 ---
+
+Chapitre 3 – Droit cantonal
+3. DROIT CANTONAL
+3.1 Introduction
+La législation cantonale comprend l’ensemble des actes législatifs édictés par les autorités
+cantonales habilitées à légiférer. En vertu de l’article 3 Cst., les cantons disposent d’une
+compétence générale. Il en découle que la Constitution fédérale n’énumère pas les compétences
+cantonales (FF 1997 I 207). Une telle énumération ne figure pas non plus forcément dans les
+constitutions cantonales23.
+La législation cantonale, dans son sens large, comprend :
+• le droit intercantonal (conventions intercantonales) ;
+• le droit cantonal proprement dit (constitution, lois, ordonnances) ;
+• le droit communal.
+3.2 Droit intercantonal
+3.2.1 Définitions
+Le droit intercantonal comprend :
+• les conventions intercantonales (appelées également concordats) ;
+• les actes législatifs contenant des règles de droit, établis par des institutions
+intercantonales en vertu de conventions intercantonales.
+3.2.1.1 Conventions
+Les conventions intercantonales constituent des accords de droit public, conclus entre deux ou
+plusieurs cantons, créant des droits et des obligations pour les cantons signataires (conventions
+obligationnelles) et/ou pour les particuliers résidant sur leur territoire (conventions normatives).
+Ces conventions permettent d’unifier le droit dans un domaine particulier, en évitant une
+centralisation des compétences auprès de la Confédération.
+Elles l’emportent sur le droit cantonal, mais doivent respecter le droit fédéral et celui des autres
+cantons (art. 48 al. 3 Cst. ; ATF 125 II 86, p. 93).
+Selon l’article 48 al. 1 Cst., les cantons peuvent conclure des conventions entre eux. Celles-ci
+peuvent porter sur tous les domaines dans lesquels les cantons sont compétents (art. 3, 42 et 43
+Cst.), pour autant qu’elles ne soient contraires ni au droit et aux intérêts de la Confédération, ni au
+droit des autres cantons (art. 48 al. 3 Cst.).
+23 Auer/Malinvern /Hottelier, N. 978.
+3-1/7
+
+--- PAGE 27 ---
+
+Chapitre 3 – Droit cantonal
+3.2.1.2 Actes législatifs contenant des règles de droit
+Les cantons peuvent créer des organisations et des institutions communes (art. 48 al. 1 Cst.). De
+telles institutions intercantonales peuvent, en vertu de concordats, édicter des actes législatifs
+contenant des règles de droit.
+La récente réforme de la péréquation financière et de la répartition des tâches entre la
+Confédération et les cantons (adoptée en votation populaire le 28 novembre 2004) a légitimé la
+compétence des organes intercantonaux à édicter des normes primaires ; elle a inscrit dans la
+Constitution fédérale (art. 48 al. 4 Cst.) les principes applicables à de tels actes législatifs (FF 2005
+883 ; FF 2003 6035). Les cantons peuvent désormais, par une convention intercantonale, habiliter
+un organe intercantonal à édicter des dispositions contenant des règles de droit, pour autant que
+cette convention soit adoptée selon la procédure applicable aux lois et qu’elle fixe les grandes
+lignes de ces dispositions.
+3.2.2 Conclusion des conventions
+Le droit cantonal détermine librement la procédure de conclusion des conventions
+intercantonales. Les autorités compétentes pour les conclure peuvent ainsi fortement varier
+puisqu’un premier groupe de cantons désigne le Parlement seul à cet effet, un deuxième groupe
+institue un référendum facultatif alors qu’un troisième ensemble de cantons introduit un
+référendum obligatoire.
+Aux termes de l’article 48 al. 3 Cst., les cantons doivent porter à la connaissance de la
+Confédération les conventions conclues. Le Conseil fédéral est compétent pour exercer cette
+surveillance (art. 186 al. 3 Cst.). Lorsqu’il élève une réclamation, ou qu’un canton en fait de même, la
+cause est portée devant l’Assemblée fédérale, qui tranche souverainement (art. 172 al. 3 Cst.).
+3.2.3 Publication des conventions
+Les conventions intercantonales sont publiées dans les organes cantonaux officiels.
+Leur publication dans le Recueil officiel a été abandonnée avec l’entrée en vigueur de la nouvelle
+loi sur les publications officielles (voir FF 2003 7053). Comme le précise le Message du Conseil
+fédéral, « en vertu de l’art. 48, al. 3, Cst., les conventions intercantonales doivent être simplement
+portées à la connaissance de la Confédération, et non plus être approuvées par elle. Dans ces
+conditions, le statut de ces conventions change, et leur publication par la Confédération devient
+moins pertinente » (FF 2003 7053). L’abandon de la publication des conventions intercantonales
+répond également à un souci de clarification de la répartition des tâches entre la Confédération et
+les cantons (FF 2003 7048).
+Désormais, seules les conventions intercantonales auxquelles la Confédération est partie sont
+publiées au Recueil officiel ainsi qu'au Recueil systématique (art. 4, 11 LPubl).
+En vertu de ces modifications, de nombreux concordats ont été retirés du Recueil systématique.
+3-2/7
+
+--- PAGE 28 ---
+
+Chapitre 3 – Droit cantonal
+3.2.4 Citation
+Les principes relatifs à la citation des lois fédérales s’appliquent par analogie aux conventions
+intercantonales lorsqu’il est fait référence à leur publication dans le Recueil officiel et dans le
+Recueil systématique.
+Lorsque la référence est faite au recueil cantonal, les méthodes de citation du droit cantonal en
+question s’appliquent par analogie également.
+3.3 Droit cantonal
+3.3.1 Généralités
+Pris dans son sens étroit, le droit cantonal comprend trois catégories principales d’actes législatifs :
+• la constitution ;
+• la loi formelle ;
+• l’ordonnance.
+Si les deux premières ne posent pas de problème particulier, la troisième demande à être
+explicitée pour des motifs terminologiques.
+L’ordonnance émanant du Parlement s’appelle parfois décret en français (Beschluss, Verordnung).
+L’ordonnance émanant du gouvernement peut être une ordonnance (Verordnung), un arrêté
+(Beschluss), un règlement ou un décret selon les cantons.
+Le droit cantonal comprend également les normes édictées par les établissements et corporations
+de droit public cantonal.
+3.3.2 Publication
+Les Constitutions cantonales sont publiées et traduites au Recueil systématique (sous la cote
+RS 131), à la suite de la Constitution fédérale (art. 11 al. 1 LPubl).
+Si chaque canton adopte un système propre pour publier ses actes législatifs, la tendance est à
+l’harmonisation de la classification sous l’influence du Recueil systématique du droit fédéral.
+Le plus souvent, les cantons disposent des collections suivantes, selon des terminologies qui
+diffèrent parfois :
+• un journal officiel reproduisant à intervalles réguliers (hebdomadaire en principe) les
+textes de loi au fur et à mesure de leur adoption ainsi que des projets et d’autres
+documents officiels. C’est un organe de promulgation des actes législatifs ;
+• un recueil chronologique reproduisant les actes législatifs annuellement au fur et à
+mesure de leur promulgation ;
+• un recueil systématique classant par matières les actes législatifs en vigueur à un moment
+précis.
+3-3/7
+
+--- PAGE 29 ---
+
+Chapitre 3 – Droit cantonal
+Pour plus de détails, on pourra consulter Tercier/Roten, N. 237ss.
+3.3.3 Consultation
+La recherche des lois cantonales est facilitée par l’existence des recueils systématiques. Différents
+index aident à la consultation dans leur édition imprimée.
+3.3.4 Citation
+Les principes applicables à la citation du droit fédéral valent par analogie pour la plupart des droits
+cantonaux.
+3.4 Droit communal
+Les communes ont un pouvoir normatif, qui découle de leur statut de collectivités publiques24. La
+compétence normative est restreinte aux matières qui rentrent dans les attributions communales.
+Les actes normatifs communaux sont variés25.
+Certains cantons ont des constitutions communales (Gemeindeordnungen). Les lois et ordonnances
+communales sont appelées en règle générale « règlements communaux ».
+Les législations communales peuvent avoir une grande importance, notamment dans les
+agglomérations urbaines, où elles sont souvent publiées, parfois même sous forme d’un recueil
+systématique26.
+Les villes de Berne, Genève, Sion, Lucerne et Zurich, notamment, possèdent leur propre recueil d’actes
+législatifs.
+3.5 Droit international
+Les traités internationaux constituent la source principale du droit international public.
+Afin de se remémorer les différentes étapes de conclusion d’un traité sous l’angle national, on
+consultera le Guide de la pratique en matière de traités internationaux, publié par la Direction du droit
+international public27.
+24 Pierre Moor, Droit administratif, L’organisation administrative. Les biens de l’Etat, Vol. III, Berne 1992, p. 171.
+25 Auer/Malinverni/Hottelier, N. 1638ss.
+26 Tercier/Roten, N. 229.
+27 http://www.dfae.admin.ch/traites.
+3-4/7
+
+--- PAGE 30 ---
+
+Chapitre 3 – Droit cantonal
+3.5.1 Traités internationaux
+3.5.1.1 Généralités
+Les traités conclus par la Suisse avec des Etats étrangers, des organisations internationales ou
+d’autres sujets du droit international peuvent être publiés officiellement dans le Recueil
+systématique ou dans le Recueil officiel du droit fédéral.
+En vertu de l’article 3 LPubl, les traités internationaux qui ont été soumis au référendum (al. 1 let.
+a), les autres traités internationaux et les décisions d’organisations internationales (décisions
+internationales) qui lient la Suisse et qui contiennent des règles de droit ou obligent à en édicter
+(al. 1 let. b et c) ainsi que d’autres décisions et traités internationaux si le Conseil fédéral le décide
+(al. 2) sont publiés dans le Recueil officiel.
+3.5.1.2 Accords bilatéraux
+3.5.1.2.1 Accords bilatéraux I
+Le 6 décembre 1992, le peuple et les cantons ont refusé la participation de la Suisse à l’espace
+économique européen (EEE)28. Cette décision a marqué la fin de la politique d’ouverture de la
+Suisse, qui avait conduit à la signature de l’Accord EEE et à la demande d’adhésion de la Suisse à la
+Communauté économique européenne, déposée en mai 1992. Au début de 1993, il n’existait pas
+d'autre voie que le développement d'une stratégie bilatérale si la Suisse entendait poursuivre une
+politique d’approfondissement de ses relations avec l’Union européenne. La demande d’adhésion a
+été gelée, et le Conseil fédéral a proposé la négociation d’accords bilatéraux et sectoriels, ce que
+le Conseil de l’Union européenne a accepté à la fin de l’année 1993.
+Les négociations se sont ouvertes formellement le 12 décembre 2004 et ont abouti à la signature
+des sept premiers Accords bilatéraux (Accords bilatéraux I), le 21 juin 1999 à Luxembourg. Ils sont
+tous entrés en vigueur ensemble le 1er juin 2002 après avoir été acceptés en Suisse par votation
+populaire du 21 mai 200029.
+3.5.1.2.2 Accords bilatéraux II
+Dans une déclaration commune jointe aux Accords bilatéraux I, la Suisse et l’Union européenne
+sont convenues d’entamer des négociations sur d’autres thèmes (comme les produits agricoles
+transformés ou l’environnement notamment).
+La deuxième série d’Accords bilatéraux a été signée le 26 octobre 2004. L’Accord sur la
+participation de la Suisse à Schengen/Dublin a été accepté en Suisse en votation populaire le 5 juin
+200530.
+28 http://www.admin.ch/ch/f/pore/va/19921206/index.html.
+29 http://www.admin.ch/ch/f/pore/va/20000521/index.html.
+30 http://www.admin.ch/ch/f/pore/va/20050605/index.html.
+3-5/7
+
+--- PAGE 31 ---
+
+Chapitre 3 – Droit cantonal
+Le Bureau de l’intégration DFAE/DFE publie sur son site un récapitulatif de la ratification et de l’entrée
+en vigueur des accords bilatéraux II31, ainsi qu’un historique des relations entre la Suisse et l’Union
+européenne32.
+3.5.2 Soft law
+La soft law peut se définir comme l’ensemble des textes dont la nature normative est incertaine
+« du fait soit de leur contenu, soit de leur inclusion dans une source non susceptible de créer des
+obligations juridiques »33.
+Elle prend une importance croissante en droit international public34 et n’est de loin pas dénuée de
+toute portée en droit interne35. La soft law n’est pas publiée dans un organe officiel.
+La doctrine classe les actes internationaux non obligatoires en deux catégories, selon leur
+caractère unilatéral ou concerté.
+Dans la première catégorie, on citera les recommandations et les avis.
+Les résolutions adoptées par le Conseil de sécurité des Nations Unies dans le cadre du chapitre VI de la
+Charte, les nombreuses déclarations de l’Assemblée générale des Nations Unies depuis l’adoption le
+10 décembre 1948 de la Déclaration universelle des droits de l’homme ou celles du Conseil de l’Europe,
+ainsi que les traités-types dont les Etats peuvent s’inspirer.
+Dans la seconde catégorie d’actes, on citera les actes concertés non conventionnels (gentlemen’s
+agreements, non binding agreements).
+La déclaration commune des ministres européens de l’éducation (déclaration de Bologne).
+Dans certains cas, il n’est pas facile de les distinguer des recommandations, mais la question
+demeure théorique dans la mesure où la portée juridique des actes concertés non conventionnels
+reste très voisine de celle des recommandations, voire des accords internationaux si l’on prend
+l’exemple de la déclaration de Bologne.
+31 http://www.europa.admin.ch/themen/00500/00507/00527/index.html?lang=fr.
+32 http://www.europa.admin.ch/themen/00499/00505/index.html?lang=fr.
+33 Patrick Daillier/Mathias Forteau/Alain Pellet, Droit international public, 8e éd., Paris 2009, N. 253.
+34 Sur le point de la situation, voir Dinah Shelton, Soft law, in Armstrong, David (éd.), Handbook of international law, Londres/ New
+York, 2008.
+35 Alexandre Flückiger, L’émergence des actes étatiques non obligatoires, RDS 2004 II p. 159ss.
+3-6/7
+
+--- PAGE 32 ---
+
+Chapitre 3 – Droit cantonal
+Les actes concertés non conventionnels se cachent sous des dénominations variées : communiqués
+communs, déclarations, chartes, codes de conduite, arrangements, memoranda, actes finals,
+protocoles, etc.
+3-7/7
+
+--- PAGE 33 ---
+
+Chapitre 4 – Sources jurisprudentielles
+4. SOURCES JURISPRUDENTIELLES
+4.1 Jurisprudence fédérale
+4.1.1 Introduction
+Par jurisprudence fédérale, on entend « l’ensemble des décisions qui sont rendues par les
+tribunaux et les autres autorités investies du pouvoir judiciaire ou exécutif »36.
+Ces décisions sont prononcées par le Tribunal fédéral et, dans des domaines spécialisés, par d’autres
+autorités.
+4.1.2 Arrêts du Tribunal fédéral
+4.1.2.1 Structuration
+À l’instar des lois fédérales, les arrêts du Tribunal fédéral sont structurés de manière rigoureuse.
+Connaître cette structure permet de trouver très rapidement des informations importantes par un
+simple survol du texte.
+De manière schématique, la structure d’un arrêt publié dans le Recueil officiel des arrêts du
+Tribunal fédéral est la suivante :
+• désignation de la cour qui a statué ;
+• date de la décision ;
+• désignation des parties ;
+• « chapeau » (sommaire de la décision) ;
+• questions de recevabilité ;
+• questions de fond.
+Une partie spécifique de la structure d’un arrêt du Tribunal fédéral publié dans le Recueil officiel
+est la reproduction d’un sommaire comprenant quelques mots clés et résumant le jugement. Ce
+sommaire est qualifié de « chapeau d’arrêt ». Traduit dans les trois langues officielles que sont
+l’allemand, le français et l’italien, il n’a cependant qu’une portée relative. Les arrêts publiés
+uniquement dans la banque de données Internet du Tribunal fédéral ne sont pas précédés d’un
+sommaire.
+Le sommaire d’un arrêt du Tribunal fédéral est composé de deux parties :
+• une liste concise de mots-clés avec la référence aux principales dispositions légales
+appliquées dans le cas d’espèce ;
+36 Tercier/Roten, N. 528.
+4-1/8
+
+--- PAGE 34 ---
+
+Chapitre 4 – Sources jurisprudentielles
+• un résumé de quelques phrases comportant les caractéristiques suivantes :
+o la situation de fait n’est pas résumée ;
+o les principaux résultats de l’arrêt sont exposés avec la référence aux considérants
+pertinents ;
+o les phrases sont en principe entièrement rédigées ;
+o les revirements / changements / modifications de jurisprudence sont en règle
+générale annoncés.
+ATF 135 I 79 (revirement de jurisprudence), 129 III 135 (changement), 129 I 110 (modification).
+4.1.2.2 Publication
+Sur la pratique du Tribunal fédéral en matière de publication, voir Paul Tschümperlin, Öffentlichkeit der
+Entscheidungen und Publikationspraxis des Schweizerischen Bundesgerichts, in : Revue suisse de
+jurisprudence, Zurich 2003, p. 265ss.
+Le Tribunal est tenu d’informer le public sur sa jurisprudence (art. 27 al. 1 LTF37). A tout le moins,
+toutes les décisions qui sont destinées à avoir une influence sur la jurisprudence future doivent
+être rendues publiques38.
+Seuls certains arrêts du Tribunal fédéral (entre 5 et 10 %) sont publiés dans le Recueil officiel des
+arrêts du Tribunal fédéral. Chaque section du tribunal détermine lesquelles de ses décisions le
+seront (art. 58 al. 2 RTF39).
+En général, les arrêts publiés sont les arrêts dits « de principe » (art. 58 al. 1 RTF), à savoir,
+notamment, les changements de jurisprudence, les précisions apportées à une jurisprudence
+antérieure, ou encore la confirmation d’une jurisprudence ancienne après une longue période40.
+Les arrêts sont publiés dans leur langue originale. Seul le chapeau introductif est traduit dans les
+langues officielles, à l’exception du romanche. Depuis 1996, le Tribunal fédéral rédige des arrêts en
+romanche lorsqu’il statue sur un recours formé par un recourant de langue romanche contre une
+décision rendue par une autorité grisonne. A ce jour, un seul arrêt a été rendu dans cette langue
+(ATF 122 I 93).
+Le Recueil officiel paraît annuellement depuis 1875. Il est divisé actuellement en cinq parties :
+• I, consacrée depuis 1995 (volume 121) au droit constitutionnel ;
+• II, consacrée depuis 1995 au droit administratif et au droit international public ;
+• III, consacrée depuis 1995 au droit civil et aux poursuites pour dettes et faillite ;
+37 Loi sur le Tribunal fédéral, du 17 juin 2005 (RS 173.110).
+38 Heinz Aemisegger, Öffentlichkeit der Justiz, in : Neue Bundesrechtspflege, Berne 2007, p. 375ss., p. 399 et réf. citées.
+39 Règlement du Tribunal fédéral, du 20 novembre 2006 (RS 173.110.131).
+40 Jacques Bühler, Trouver les arrêts pertinents dans les ATF sur Internet : stratégies de recherche, Revue de l’avocat 10/2007, p.
+435.
+4-2/8
+
+--- PAGE 35 ---
+
+Chapitre 4 – Sources jurisprudentielles
+• IV, consacrée depuis 1942 au droit pénal et à l’exécution des peines ;
+• V, consacrée depuis 1970 (volume 96) au droit des assurances sociales.
+Plusieurs autres revues contiennent des arrêts du Tribunal fédéral. On consultera à ce propos
+Tercier/Roten, N. 636ss.
+4.1.2.3 Consultation sous forme imprimée
+Les jugements du Tribunal fédéral peuvent être consultés dans le Recueil officiel des arrêts du
+Tribunal fédéral.
+Plusieurs types de tables en facilitent la consultation :
+• une table alphabétique des matières et un tableau des abréviations au début de chaque
+volume ;
+• une table décennale classée de manière systématique par lois et par matières ;
+• un répertoire périodique des matières ;
+• une liste des parties (jusqu’en 1984, volume 110).
+4.1.2.4 Citation
+Les manières de citer les arrêts du Tribunal fédéral exposées ci-dessous sont tirées des Règles de
+citation publiées, sur son site Internet, par le Tribunal fédéral41.
+4.1.2.4.1 Arrêts publiés dans le Recueil officiel
+Le mode de citation adopté par le Tribunal fédéral constitue la règle en la matière. Certains
+auteurs y ajoutent parfois le nom des parties.
+La référence de base comprend :
+• l’abréviation du Recueil officiel ;
+• le numéro du volume. Ce numéro additionné à 1874 permet de retrouver l’année du
+volume ;
+• le numéro de la partie en chiffres romains ;
+• le numéro de la première page (qui n’est pas précédé par l’abréviation p.).
+Elle est complétée par :
+• le considérant (précédé de l’abréviation consid.), et/ou
+• le numéro de page topique, si nécessaire (éventuellement précédé de l’abréviation p.).
+41 http://www.bger.ch/fr/index/juridiction/jurisdiction-inherit-template/jurisdiction-zitierregeln.htm.
+4-3/8
+
+--- PAGE 36 ---
+
+Chapitre 4 – Sources jurisprudentielles
+ATF 123 III 306, 314.
+Lorsque plusieurs arrêts sont cités à l’appui d’un argument, l’abréviation du Recueil officiel (ATF)
+n’est précisée que pour le premier de la série.
+ATF 123 III 306, 314 ; 116 II 422, 427 ; etc.
+4.1.2.4.2 Arrêts publiés dans le Recueil officiel et dans une revue privée
+Lorsqu’un arrêt est publié aux ATF, il peut être suivi des références de sa traduction au Journal des
+Tribunaux et/ou à la Semaine Judiciaire pour faciliter la tâche des lecteurs francophones.
+ATF 127 IV 122, JT 2002 IV 118, SJ 2001 I 601.
+4.1.2.4.3 Arrêts non publiés dans le Recueil officiel
+Lorsqu’un arrêt est destiné à être publié au Recueil officiel, mais ne l’a pas encore été au moment
+de la citation, le Tribunal fédéral indique la date de l’arrêt et la référence de la cause, précédée de
+l’indication ATF.
+ATF 2P.131/2000, du 13 novembre 2001.
+Les autres arrêts non publiés ne contiennent pas la mention ATF.
+Tribunal fédéral, arrêt 4C.327/1994, du 3 janvier 1995.
+Lorsqu’un arrêt non publié au Recueil officiel est publié dans une autre revue, le Tribunal fédéral
+en mentionne en principe la référence dans sa citation :
+Tribunal fédéral, arrêt 1P.440/2000 du 1er février 2001, in SJ 2001 I p. 221, ou SJ 2001 I p. 221, 1P.
+440/2000.
+Lorsqu’une publication dans une revue n’est que partielle, la référence doit l’indiquer également :
+4-4/8
+
+--- PAGE 37 ---
+
+Chapitre 4 – Sources jurisprudentielles
+consid. 5 non publié de l’ATF 122 III 324, reproduit partiellement in RSDA 1996 p. 234s.
+Ce code normalisé des arrêts non publiés aide à repérer la cour et la matière juridique selon les
+structures-types pQ.r/s jusqu’en 2006, et pQ_r/s depuis 2007 :
+• p = le numéro de la Cour ayant statué :
+o 1, 1ère Cour de droit public ;
+o 2, 2ème Cour de droit public ;
+o 4, 1ère Cour de droit civil ;
+o 5, 2ème Cour de droit civil ;
+o 6, Cour de droit pénal ;
+o 8, 1ère Cour de droit social ;
+o 9, 2ème Cour de droit social.
+• Q = le type de procédure concernée :
+o A, recours en matière civile ;
+o B, recours en matière pénale ;
+o C, recours en matière de droit public ;
+o D, recours constitutionnel subsidiaire ;
+o E, action selon l'art. 120 LTF ;
+o F, révision ;
+o G, interprétation et rectification ;
+o T, dénonciation à l'autorité de surveillance ;
+o U, échanges de vues internes ;
+o V, échanges de vues externes ;
+o W, mises en consultation CEDH ;
+o X, Y, procédure administrative fédérale ;
+o Z, juridiction non contentieuse.
+• r = le numéro d’ordre du dossier pour la Cour concernée (numérotation continue) ;
+• s = l’année d’arrivée de l’affaire.
+Le dossier 4A_31/2007 est le 31ème recours en matière civile enregistré en 2007 auprès de la 1ère
+Cour de droit civil.
+Pour plus de détails sur les codes des arrêts non publiés au Tribunal fédéral et au Tribunal fédéral des
+assurances, en particulier s’agissant de la situation antérieure à 2007, voir Tercier/Roten, N. 617ss.
+4-5/8
+
+--- PAGE 38 ---
+
+Chapitre 4 – Sources jurisprudentielles
+On précisera qu’en pratique, la doctrine cite encore parfois les arrêts du Tribunal fédéral non
+publiés dans le Recueil officiel de manière abrégée.
+TF, 21.4.1997, in DEP 1997 p. 590 (ATF 123 II 337) ; TF, 21.3.1997, in RDAF 1997 I p. 219.
+4.1.3 Décisions des autres autorités fédérales
+4.1.3.1 Tribunal pénal fédéral
+Le Tribunal pénal fédéral de Bellinzone, en fonction depuis le 1er avril 2004, est l'autorité
+juridictionnelle ordinaire de la Confédération en matière pénale (art. 1 al. 1 LTPF42).
+Il traite, en première instance, des affaires pénales qui, selon la loi, relèvent de la juridiction
+fédérale (art. 1 al. 2 LTPF). Par ailleurs, il reprend les compétences dévolues à l’ancienne Chambre
+d’accusation du Tribunal fédéral.
+Le Tribunal pénal fédéral est tenu d’informer le public sur sa jurisprudence (art. 25 LTPF). Il publie
+en conséquence ses décisions sur Internet, dans la base de données des arrêts du Tribunal pénal
+fédéral, ainsi qu’une sélection de celles-ci dans le Recueil officiel des arrêts du Tribunal pénal
+fédéral (TPF).
+Sur la manière de citer les arrêts du Tribunal pénal fédéral, voir les Règles de citation publiées par le
+Tribunal fédéral.
+4.1.3.2 Tribunal administratif fédéral
+Le Tribunal administratif fédéral est en fonction depuis le 1er janvier 2007. Ses activités sont
+notamment régies par la loi sur le Tribunal administratif fédéral (LTAF)43.
+Le Tribunal administratif fédéral a pour rôle de statuer sur les litiges de droit public découlant
+d’actes de l’administration fédérale. Il tranche les recours interjetés contre des décisions
+d’autorités fédérales et connaît en première instance des actions de droit administratif.
+Le Tribunal administratif fédéral statue soit en qualité d’instance inférieure au Tribunal fédéral, soit
+en dernière instance.
+Il remplace la plupart des anciennes commissions fédérales de recours ou d’arbitrage.
+Le Tribunal administratif fédéral publie ses décisions sur Internet, dans la base de données des
+arrêts du Tribunal administratif fédéral, ainsi qu’une sélection de celles-ci dans le Recueil officiel
+des arrêts du Tribunal administratif fédéral (ATAF).
+42 Loi fédérale sur le Tribunal pénal fédéral, du 4 octobre 2002 (RS 173.71).
+43 Loi sur le Tribunal administratif fédéral, du 17 juin 2005 (RS 173.32).
+4-6/8
+
+--- PAGE 39 ---
+
+Chapitre 4 – Sources jurisprudentielles
+Pour plus de détails sur le Recueil officiel des arrêts du Tribunal administratif fédéral, voir
+Tercier/Roten, N. 686ss.
+4.1.3.3 Tribunal militaire de cassation
+La publication des Arrêts du Tribunal militaire de cassation (ATMC) reproduit les décisions du
+Tribunal militaire de cassation depuis 1915 de manière analogue à l’édition des arrêts du Tribunal
+fédéral.
+La citation d’un jugement du Tribunal militaire de cassation publié peut se faire de la manière
+suivante :
+ATMC 11 no 40 consid. 2.
+4.1.3.4 Jurisprudence des autorités administratives de la Confédération
+Sur le plan fédéral, la Confédération édite la Jurisprudence des autorités administratives de la
+Confédération (JAAC).
+Cette revue publie des décisions et des communications (circulaires, commentaires, avis de droit,
+etc.) émanant du Conseil fédéral, de ses départements ou des offices de l’administration fédérale
+ainsi que des anciennes commissions fédérales de recours. Elle peut aussi contenir des arrêts du
+Tribunal fédéral non publiés au recueil officiel. On trouve également des extraits de la
+jurisprudence des organes de la CEDH. Depuis 2007, elle n’est publiée que sous forme
+électronique44.
+La liste des autorités dont les décisions peuvent être publiées dans la JAAC est disponible sur le
+site de la Chancellerie fédérale45.
+La manière officielle de citer une référence à la JAAC est la suivante :
+JAAC 62.82 consid. 6b/aa, JAAC 62.59 ch. 3.2.
+Il existe également d’autres modes, plus clairs, de citation.
+JAAC 60 (1996) no 5 p. 47ss.
+44 http://www.bk.admin.ch/dokumentation/02574/index.html?lang=fr.
+45 http://www.vpb.admin.ch/franz/autorites_fr.html.
+4-7/8
+
+--- PAGE 40 ---
+
+Chapitre 4 – Sources jurisprudentielles
+On trouvera d’autres revues citées dans Tercier/Roten, N. 714ss.
+4.2 Jurisprudence cantonale
+4.2.1 Publication
+4.2.1.1 Publications officielles et officieuses
+La jurisprudence cantonale est publiée officiellement ou officieusement dans chaque canton. La
+liste des publications peut être consultée dans Tercier/Roten, N. 733ss.
+La jurisprudence genevoise peut être consultée dans la Semaine judiciaire (SJ) et dans la Revue de
+droit administratif et fiscal (RDAF).
+4.2.1.2 Publications générales
+Certaines revues à vocation nationale, comme la Revue Suisse de Jurisprudence (RSJ) ou la Pratique
+juridique actuelle (PJA) peuvent également reproduire des décisions cantonales46.
+4.2.2 Citation
+Toute référence à un arrêt cantonal doit comprendre la mention de l’autorité de jugement, la date
+du jugement, ainsi que les indications relatives à sa publication.
+Tribunal cantonal VS, du 12 février 2004, in RNRF 2005 p. 235ss.
+46 Tercier/Roten, N. 816ss.
+4-8/8
+
+--- PAGE 41 ---
+
+Chapitre 5 – Sources doctrinales
+5. SOURCES DOCTRINALES
+La doctrine juridique constitue « l’ensemble des textes publiés par des auteurs sur des sujets de
+caractère juridique »47. Elle ne constitue pas une source du droit à proprement parler. C’est une
+« autorité » dont le juge doit « s’inspirer » (art. 1 al. 3 CC)48.
+On catégorise habituellement les différents types de publications de la façon suivante :
+• traités et manuels ;
+• commentaires :
+o grands commentaires ;
+o petits commentaires ;
+• monographies :
+• thèses de doctorat et d’habilitation ;
+• rapports ;
+• autres monographies ;
+• articles :
+o publiés dans des revues ou des périodiques ;
+o publiés dans des ouvrages collectifs ;
+• mélanges ou hommages ;
+• ouvrages thématiques ;
+• autres publications :
+• cartothèques ;
+• répertoires ou « dictionnaires » ;
+• recueils d’arrêts ;
+• tables ;
+• comptes rendus ;
+• dictionnaires français et bilingues.
+Pour des explications plus détaillées, ainsi que des exemples, on se reportera à Tercier/Roten, N. 914ss.
+47 Tercier/Roten, N. 911.
+48 En droit international public, la doctrine « des publicistes les plus qualifiés des différentes nations » est utilisée comme moyen
+auxiliaire de détermination des règles de droit (art. 38 du Statut de la Cour internationale de Justice, RS 0.193.501).
+5-1/1

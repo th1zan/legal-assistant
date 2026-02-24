@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "workspace": {
+    "name": "legal-assistant",
+    "createdAt": 1771968758601,
+    "preset": "minimal"
+  },
+  "authorizedRoots": [
+    "/Users/thibault/Documents/legal-assistant"
+  ]
+}
