@@ -1,5 +1,6 @@
 # Tasks
-Analyse et creer une roadmap
+Analyse et creer une roadmap avec ceci:
+- Analyser le fichier Grok.md et verifier si on prend la bonne direction 
 - verifier la connexion aux MCP et vérifier la rapidité de reponse.
 - classer les skills en 3 sois dossier /mcp /recherche /anthropic
 - pour  chaque skill de recherche analyser si les liens sont obsoletes.
