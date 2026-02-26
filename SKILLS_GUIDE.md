@@ -2,123 +2,508 @@
 
 Guide de référence rapide pour utiliser les skills de recherche juridique suisse.
 
-## 🎯 Aperçu des Skills
+**Dernière mise à jour** : 2026-02-25  
+**Structure** : Hiérarchique (6 catégories)
 
-### 1. swiss-case-law-research
+---
+
+## 📚 Table des Matières
+
+1. [Vue d'Ensemble](#vue-densemble)
+2. [Skills par Catégorie](#skills-par-catégorie)
+3. [Workflows Recommandés](#workflows-recommandés)
+4. [Guide des Abréviations](#guide-des-abréviations)
+5. [Stratégies de Recherche](#stratégies-de-recherche)
+6. [Limitations](#limitations)
+7. [Ressources](#ressources)
+
+---
+
+## 🎯 Vue d'Ensemble
+
+### Structure des Skills
+
+Les skills sont organisés en **6 catégories** :
+
+```
+.opencode/skills/
+├── mcp/          → Skills utilisant les serveurs MCP (2)
+├── recherche/    → Skills de recherche juridique (13)
+├── analyse/      → Skills d'analyse de cas (0 - à créer)
+├── redaction/    → Skills de rédaction (0 - à créer)
+├── production/   → Production de documents (4)
+└── anthropic/    → Skills génériques Claude (3)
+```
+
+### Invocation des Skills
+
+**Format** : `@category/skill-name`
+
+**Exemples** :
+```
+@mcp/swiss-case-law-research
+@recherche/recherche-juridique-suisse
+@production/docx
+```
+
+---
+
+## 📂 Skills par Catégorie
+
+### 1. MCP (Accès aux Bases de Données)
+
+Skills qui interrogent directement les serveurs MCP pour accéder aux bases de données juridiques suisses.
+
+#### @mcp/swiss-case-law-research
+
 **MCP** : entscheidsuche  
 **Base de données** : >1 million de décisions judiciaires  
 **Couverture** : Tribunaux fédéraux + 26 cantons  
-**Langues** : DE (70%), FR (25%), IT (5%)
+**Langues** : DE (70%), FR (25%), IT (5%)  
+**Performance** : ~1.2s par requête
 
-### 2. swiss-legal-commentary
+**Utiliser quand** :
+- ✓ Chercher des arrêts du Tribunal fédéral
+- ✓ Trouver de la jurisprudence cantonale
+- ✓ Identifier des précédents judiciaires
+- ✓ Vérifier la pratique judiciaire sur un sujet
+
+**Exemples de questions** :
+```
+"Cherche des décisions du BGer sur le licenciement pendant la grossesse"
+"Quelle est la jurisprudence récente (2020-2024) sur la protection des données ?"
+"Trouve des arrêts du Tribunal fédéral sur l'art 8 CEDH discrimination"
+```
+
+---
+
+#### @mcp/swiss-legal-commentary
+
 **MCP** : onlinekommentar  
-**Base de données** : Commentaires doctrinaux  
+**Base de données** : Commentaires juridiques doctrinaux  
 **Couverture** : Lois fédérales principales  
-**Langues** : DE, FR, IT, EN (selon commentaire)
+**Langues** : DE, FR, IT, EN (selon commentaire)  
+**Performance** : ~0.8s par requête
 
-## 🚀 Invocation des Skills
+**Utiliser quand** :
+- ✓ Expliquer un article de loi spécifique
+- ✓ Comprendre la doctrine juridique
+- ✓ Trouver des commentaires d'auteurs
+- ✓ Interpréter une disposition légale
 
-Les skills sont automatiquement disponibles dans votre workspace OpenWork. L'agent les utilisera quand vous posez des questions juridiques.
-
-### Questions Déclenchant swiss-case-law-research
-
+**Exemples de questions** :
 ```
-✓ "Cherche des décisions sur [sujet]"
-✓ "Trouve des arrêts du Tribunal fédéral concernant [thème]"
-✓ "Quelle est la jurisprudence sur [question]"
-✓ "Y a-t-il des cas récents sur [domaine]"
-✓ "Montre-moi la pratique judiciaire sur [topic]"
-```
-
-### Questions Déclenchant swiss-legal-commentary
-
-```
-✓ "Explique-moi l'article [X] de [loi]"
-✓ "Que dit la doctrine sur [sujet]"
-✓ "Quels sont les commentaires juridiques sur [thème]"
-✓ "Comment interpréter [article]"
-✓ "Qu'écrivent les auteurs sur [question]"
+"Explique l'article 328 CO sur la protection de la personnalité"
+"Que dit la doctrine sur l'interprétation de l'art 641 CC (propriété)"
+"Quels sont les commentaires juridiques sur la nouvelle LPD 2023"
 ```
 
-## 📊 Comparaison des Deux Skills
+---
 
-| Critère | Case Law | Commentary |
-|---------|----------|------------|
-| **Type de source** | Jurisprudence (décisions) | Doctrine (analyse) |
-| **Autorité** | Force contraignante | Force persuasive |
-| **Volume** | >1M documents | Centaines de commentaires |
-| **Mise à jour** | Quotidienne | Périodique |
-| **Structuration** | Par décision | Par article de loi |
-| **Couverture historique** | 1875-2024 | Focus récent |
-| **Usage principal** | Trouver précédents | Comprendre la loi |
+### 2. Recherche (Méthodologie et Sources)
 
-## 🔄 Workflow Recommandé
+Skills qui fournissent des guides méthodologiques et accès aux sources juridiques.
 
-### Pour une Question Juridique Générale
+#### @recherche/recherche-juridique-suisse ⭐ META
+
+**Type** : META skill - Carte de navigation (MOC)  
+**Rôle** : Orchestre tous les autres skills de recherche
+
+**Utiliser quand** :
+- ✓ Question juridique générale (le skill route automatiquement)
+- ✓ Besoin d'aide pour formuler une recherche
+- ✓ Incertain de quel skill utiliser
+
+**Exemples** :
+```
+@recherche/recherche-juridique-suisse "Comment chercher de la jurisprudence sur les contrats de travail ?"
+@recherche/recherche-juridique-suisse "Je dois analyser l'art 8 CEDH, par où commencer ?"
+```
+
+---
+
+#### @recherche/outils-recherche-juridique
+
+**Type** : Outils techniques (MCP, CLI, APIs)  
+**Contenu** :
+- Serveurs MCP (entscheidsuche, onlinekommentar)
+- CLI Fedlex SPARQL (9000+ lois fédérales)
+- APIs cantonales
+
+**Utiliser quand** :
+- ✓ Accéder techniquement aux sources juridiques
+- ✓ Utiliser le CLI Fedlex pour recherche législative
+- ✓ Comprendre l'infrastructure MCP
+
+---
+
+#### @recherche/bases-donnees-juridiques
+
+**Type** : Guide des bases de données  
+**Contenu** : Fedlex, bger.ch, Lexfind, Swisslex (comparaison)
+
+**Utiliser quand** :
+- ✓ Savoir quelle base de données utiliser
+- ✓ Comprendre différences entre bases gratuites et payantes
+- ✓ Choisir la source appropriée pour une recherche
+
+---
+
+#### @recherche/jurisprudence-suisse
+
+**Type** : Guide de la jurisprudence  
+**Contenu** :
+- ATF (Arrêts du Tribunal fédéral publiés)
+- ATAF (Tribunal administratif fédéral)
+- TPF (Tribunal pénal fédéral)
+- Structure des arrêts, codes des cours
+
+**Utiliser quand** :
+- ✓ Comprendre la structure d'un arrêt du TF
+- ✓ Identifier une cour par son code
+- ✓ Chercher de la jurisprudence cantonale
+- ✓ Comprendre la hiérarchie des décisions
+
+---
+
+#### @recherche/sources-legislatives-federales
+
+**Type** : Guide de la législation fédérale  
+**Contenu** :
+- Recueil systématique (RS)
+- Recueil officiel (RO)
+- Feuille fédérale (FF)
+- Travaux préparatoires
+
+**Utiliser quand** :
+- ✓ Chercher une loi fédérale
+- ✓ Trouver un article de la Constitution
+- ✓ Accéder aux travaux préparatoires
+- ✓ Comprendre la procédure législative
+
+---
+
+#### @recherche/sources-cantonales
+
+**Type** : Guide du droit cantonal  
+**Contenu** :
+- 26 recueils systématiques cantonaux
+- Concordats intercantonaux
+- Droit communal
+
+**Utiliser quand** :
+- ✓ Chercher une loi cantonale
+- ✓ Trouver un concordat
+- ✓ Accéder au droit communal
+- ✓ Travaux préparatoires cantonaux
+
+---
+
+#### @recherche/sources-doctrinales
+
+**Type** : Guide de la doctrine  
+**Contenu** :
+- Traités, manuels, commentaires
+- Catalogues de bibliothèques (RERO, Alexandria)
+- Google Scholar
+
+**Utiliser quand** :
+- ✓ Chercher un ouvrage juridique
+- ✓ Trouver un article de revue
+- ✓ Identifier les commentaires d'une loi
+- ✓ Recherche bibliographique
+
+---
+
+#### @recherche/droit-international-suisse
+
+**Type** : Guide du droit international  
+**Contenu** :
+- Traités internationaux
+- Accords bilatéraux avec l'UE
+- CEDH, CIJ, soft law
+
+**Utiliser quand** :
+- ✓ Chercher un traité international liant la Suisse
+- ✓ Accords bilatéraux Suisse-UE
+- ✓ Jurisprudence CEDH
+- ✓ Droit international public
+
+---
+
+#### @recherche/citation-juridique-suisse
+
+**Type** : Guide des conventions de citation  
+**Contenu** :
+- Lois fédérales (RS, RO)
+- Arrêts du TF (ATF)
+- Feuille fédérale (FF)
+- Doctrine
+
+**Utiliser quand** :
+- ✓ Citer une source juridique suisse
+- ✓ Comprendre une référence
+- ✓ Rédiger des notes de bas de page
+- ✓ Format académique ou judiciaire
+
+---
+
+#### @recherche/techniques-recherche-juridique
+
+**Type** : Méthodologie de recherche  
+**Contenu** :
+- Troncature (essentielle pour l'allemand)
+- Opérateurs de proximité
+- Stratégie multilingue
+
+**Utiliser quand** :
+- ✓ Formuler une requête de recherche optimisée
+- ✓ Recherche multilingue (FR/DE/IT)
+- ✓ Comprendre les spécificités de la recherche juridique
+
+---
+
+#### @recherche/methodologie-recherche-jurisprudentielle
+
+**Type** : Méthodologie avancée  
+**Contenu** :
+- Méthode systématique en 5 étapes
+- Méthode analogique (rétroprogressive et progressive)
+- Recherche thématique
+
+**Utiliser quand** :
+- ✓ Mener une recherche jurisprudentielle structurée
+- ✓ Trouver des arrêts pertinents sur un sujet
+- ✓ Appliquer une méthodologie rigoureuse
+
+---
+
+#### @recherche/terminologie-juridique-multilingue
+
+**Type** : Outils de terminologie  
+**Contenu** :
+- Jurivoc (thésaurus trilingue FR/DE/IT du TF)
+- Termdat (Chancellerie fédérale)
+- IATE (terminologie UE)
+
+**Utiliser quand** :
+- ✓ Traduire un terme juridique (FR/DE/IT)
+- ✓ Chercher des synonymes juridiques
+- ✓ Préparer une recherche multilingue
+
+---
+
+#### @recherche/veille-juridique
+
+**Type** : Outils de veille  
+**Contenu** :
+- Alertes automatiques
+- Flux RSS
+- Newsletters juridiques
+- Saved searches (Swisslex)
+
+**Utiliser quand** :
+- ✓ Mettre en place un système de veille
+- ✓ Suivre l'évolution du droit
+- ✓ Surveiller nouveaux arrêts
+- ✓ Modifications législatives
+
+---
+
+### 3. Analyse (À Créer - P2 Priority)
+
+Skills pour l'analyse structurée de cas juridiques.
+
+**À créer** :
+- [ ] `analyse-cas-structuree` - Décomposition structurée (faits → droit → raisonnement)
+- [ ] `analyse-recevabilite` - Analyse de recevabilité (recours TF)
+- [ ] `analyse-jurisprudence-pertinente` - Identification d'arrêts pertinents
+- [ ] `verification-delais` - Vérification des délais procéduraux
+- [ ] `qualification-juridique` - Qualification juridique des faits
+
+**Statut** : Phase 3 (Semaines 5-6)
+
+---
+
+### 4. Rédaction (À Créer - P1/P2 Priority)
+
+Skills pour la rédaction de documents juridiques.
+
+**À créer (P1 - Priorité)** :
+- [ ] `recours-tf` - Recours au Tribunal fédéral
+- [ ] `avis-droit` - Avis de droit / Gutachten
+
+**À créer (P2 - Moyen)** :
+- [ ] `memoire-reponse` - Mémoire de réponse/réplique
+- [ ] `conclusions` - Conclusions (principales et subsidiaires)
+- [ ] `courrier-client` - Courrier client
+
+**Statut** : Phase 3-4 (Semaines 5-7)
+
+---
+
+### 5. Production (Documents)
+
+Skills pour créer et manipuler des documents dans différents formats.
+
+#### @production/docx
+
+**Type** : Création/édition de documents Word  
+**Format** : .docx
+
+**Utiliser quand** :
+- ✓ Créer un document Word
+- ✓ Éditer un document existant
+- ✓ Générer des rapports, mémoires, lettres
+- ✓ Exporter vers format requis par tribunaux
+
+---
+
+#### @production/pdf
+
+**Type** : Manipulation de PDF  
+**Format** : .pdf
+
+**Utiliser quand** :
+- ✓ Fusionner plusieurs PDFs
+- ✓ Extraire pages d'un PDF
+- ✓ Annoter un document
+- ✓ Créer un PDF à partir d'autres formats
+
+---
+
+#### @production/pptx
+
+**Type** : Création de présentations  
+**Format** : .pptx
+
+**Utiliser quand** :
+- ✓ Créer une présentation
+- ✓ Préparer des slides pour plaidoirie
+- ✓ Support visuel pour formation
+
+---
+
+#### @production/xlsx
+
+**Type** : Feuilles de calcul  
+**Format** : .xlsx
+
+**Utiliser quand** :
+- ✓ Créer un tableau de dommages
+- ✓ Calculer des coûts
+- ✓ Gérer des données tabulaires
+
+---
+
+### 6. Anthropic (Skills Génériques)
+
+Skills génériques Claude/Anthropic non spécifiques au droit.
+
+#### @anthropic/skill-creator
+
+**Type** : Méta-skill  
+**Utiliser pour** : Créer de nouveaux skills OpenCode
+
+---
+
+#### @anthropic/mcp-builder
+
+**Type** : Méta-skill  
+**Utiliser pour** : Créer de nouveaux serveurs MCP
+
+---
+
+#### @anthropic/doc-coauthoring
+
+**Type** : Workflow de co-rédaction  
+**Utiliser pour** : Rédiger de la documentation structurée
+
+---
+
+## 🔄 Workflows Recommandés
+
+### Workflow 1 : Question Juridique Générale
 
 ```
-1. DOCTRINE (commentary) → Comprendre le cadre
-2. JURISPRUDENCE (case-law) → Voir l'application
-3. SYNTHÈSE → Réponse complète
+1. @recherche/recherche-juridique-suisse
+   → Le META skill route automatiquement vers les skills appropriés
+
+2. Doctrine (@mcp/swiss-legal-commentary)
+   → Comprendre le cadre juridique
+
+3. Jurisprudence (@mcp/swiss-case-law-research)
+   → Voir l'application par les tribunaux
+
+4. Synthèse
+   → Réponse complète avec sources
 ```
 
 **Exemple** :
 ```
 Question : "Un employeur peut-il licencier une femme enceinte ?"
 
-Étape 1 - DOCTRINE
-→ Recherche : Art. 336c CO (licenciement abusif)
-→ Résultat : Cadre juridique et conditions
-
-Étape 2 - JURISPRUDENCE
-→ Recherche : "Kündigung Schwangerschaft"
-→ Résultat : Cas concrets et jurisprudence constante
-
-Étape 3 - SYNTHÈSE
-→ Principe : Licenciement possible mais souvent abusif
-→ Conditions : Motifs graves nécessaires
-→ Conséquences : Indemnités jusqu'à 6 mois
+Étape 1 : @recherche/recherche-juridique-suisse (routage)
+Étape 2 : @mcp/swiss-legal-commentary → Art. 336c CO
+Étape 3 : @mcp/swiss-case-law-research → "Kündigung Schwangerschaft"
+Étape 4 : Synthèse → Principe, conditions, conséquences
 ```
 
-### Pour une Question sur un Article Spécifique
+---
+
+### Workflow 2 : Recherche sur un Article Spécifique
 
 ```
-1. DOCTRINE (commentary) → Commentaire de l'article
-2. JURISPRUDENCE (case-law) → Application par tribunaux
-3. SYNTHÈSE → Interprétation complète
+1. @mcp/swiss-legal-commentary
+   → Commentaire doctrinal de l'article
+
+2. @mcp/swiss-case-law-research
+   → Application par les tribunaux
+
+3. @recherche/citation-juridique-suisse
+   → Citer correctement les sources trouvées
 ```
 
-### Pour une Recherche de Précédent
+---
+
+### Workflow 3 : Recherche de Précédent
 
 ```
-1. JURISPRUDENCE (case-law) → Trouver cas similaires
-2. DOCTRINE (commentary) → Vérifier cadre théorique
-3. SYNTHÈSE → Application au cas
+1. @mcp/swiss-case-law-research
+   → Trouver des cas similaires
+
+2. @recherche/methodologie-recherche-jurisprudentielle
+   → Méthode analogique pour élargir
+
+3. @mcp/swiss-legal-commentary
+   → Vérifier le cadre théorique
+
+4. Synthèse
+   → Application au cas concret
 ```
 
-## 🎯 Exemples de Questions Optimales
+---
 
-### Excellentes Questions (Précises)
-
-```
-✅ "Cherche des arrêts du BGer sur le licenciement pendant la grossesse"
-✅ "Explique l'article 328 CO sur la protection de la personnalité"
-✅ "Quelle est la jurisprudence récente (2020-2024) sur la protection des données ?"
-✅ "Que dit la doctrine sur l'interprétation de l'article 8 CEDH en Suisse ?"
-```
-
-### Questions Nécessitant Clarification
+### Workflow 4 : Rédaction d'un Recours TF (P1 - À Créer)
 
 ```
-⚠️ "Cherche sur le droit du travail"
-→ Trop large, préciser : quel aspect du droit du travail ?
+1. @analyse/analyse-recevabilite (à créer)
+   → Vérifier conditions de recevabilité
 
-⚠️ "Explique la loi"
-→ Quelle loi ? Quel article ?
+2. @analyse/analyse-cas-structuree (à créer)
+   → Décomposer faits/droit/raisonnement
 
-⚠️ "Y a-t-il des décisions ?"
-→ Sur quel sujet spécifiquement ?
+3. @mcp/swiss-case-law-research
+   → Trouver jurisprudence pertinente
+
+4. @redaction/recours-tf (à créer)
+   → Générer le recours structuré
+
+5. @production/docx
+   → Exporter en Word avec template
 ```
+
+---
 
 ## 📖 Guide des Abréviations Juridiques
 
@@ -143,6 +528,8 @@ Question : "Un employeur peut-il licencier une femme enceinte ?"
 | **BVGer** | Tribunal administratif fédéral | Bundesverwaltungsgericht | Tribunale amministrativo federale |
 | **BStGer** | Tribunal pénal fédéral | Bundesstrafgericht | Tribunale penale federale |
 
+---
+
 ## 🔍 Stratégies de Recherche par Domaine
 
 ### Droit du Travail
@@ -152,9 +539,11 @@ Question : "Un employeur peut-il licencier une femme enceinte ?"
 **Articles clés** : Art. 319-362 CO
 
 **Workflow** :
-1. Commentaire article pertinent (ex: Art. 336 CO licenciement abusif)
-2. Jurisprudence BGer sur le sujet
+1. @mcp/swiss-legal-commentary → Art. 336 CO (licenciement abusif)
+2. @mcp/swiss-case-law-research → BGer sur le sujet
 3. Jurisprudence cantonale si aspect local
+
+---
 
 ### Droit des Contrats
 
@@ -163,9 +552,11 @@ Question : "Un employeur peut-il licencier une femme enceinte ?"
 **Articles clés** : Art. 1-40 CO (partie générale)
 
 **Workflow** :
-1. Commentaire article(s) applicable(s)
-2. BGE de principe (arrêts publiés)
+1. @mcp/swiss-legal-commentary → Article(s) applicable(s)
+2. @mcp/swiss-case-law-research → BGE de principe
 3. Application récente
+
+---
 
 ### Protection des Données
 
@@ -174,9 +565,11 @@ Question : "Un employeur peut-il licencier une femme enceinte ?"
 **Articles clés** : Art. 13 Cst., LPD complète
 
 **Workflow** :
-1. Commentaire LPD (nouvelle loi 2023)
-2. Jurisprudence récente (évolution rapide)
-3. Références CEDH si pertinent
+1. @mcp/swiss-legal-commentary → LPD (nouvelle loi 2023)
+2. @mcp/swiss-case-law-research → Jurisprudence récente
+3. @recherche/droit-international-suisse → CEDH si pertinent
+
+---
 
 ### Droit Pénal
 
@@ -185,15 +578,17 @@ Question : "Un employeur peut-il licencier une femme enceinte ?"
 **Articles clés** : CP complet selon infraction
 
 **Workflow** :
-1. Commentaire article d'infraction
-2. BGer sur application/interprétation
+1. @mcp/swiss-legal-commentary → Article d'infraction
+2. @mcp/swiss-case-law-research → Application/interprétation
 3. Jurisprudence cantonale sur quantum peine
+
+---
 
 ## 💡 Astuces et Bonnes Pratiques
 
 ### Recherche Multilingue
 
-```markdown
+```
 Toujours rechercher en ALLEMAND d'abord (70% des décisions)
 → Puis compléter en français si nécessaire
 → Italien pour Tessin uniquement
@@ -202,11 +597,13 @@ Exemple :
 1. "Kündigungsschutz Schwangerschaft" (DE)
 2. "licenciement grossesse" (FR)
 → Fusionner les résultats pertinents
+
+Utiliser : @recherche/terminologie-juridique-multilingue pour traductions
 ```
 
 ### Filtrage par Juridiction
 
-```markdown
+```
 Question FÉDÉRALE → Filtrer BGer/BGE
 Question LOCALE → Inclure canton pertinent
 Question MIXTE → Les deux
@@ -219,21 +616,9 @@ Exemple :
 → Priorité CH_GE + BGer si recours
 ```
 
-### Gestion de la Temporalité
-
-```markdown
-Sujet STABLE → Jurisprudence ancienne OK
-Sujet EN ÉVOLUTION → Privilégier 2-3 dernières années
-NOUVEAU domaine → Toute jurisprudence utile
-
-Exemple :
-Droit successions : Principes stables → BGE anciens valables
-Protection données : Nouvelle LPD 2023 → Focus récent
-```
-
 ### Hiérarchie des Sources
 
-```markdown
+```
 AUTORITÉ MAXIMALE
 1. BGE (arrêts publiés du TF)
 2. BGer (arrêts non publiés du TF)
@@ -247,14 +632,17 @@ STRATÉGIE
 → Doctrine pour analyse théorique
 ```
 
+---
+
 ## 🚨 Limitations et Avertissements
 
 ### Limitations Techniques
 
-1. **Pagination** : Max 50 résultats par requête
-2. **Format documents** : JSON toujours disponible, PDF parfois absent
-3. **Couverture doctrine** : En développement, pas tous articles commentés
-4. **Langues** : Commentaires pas toujours multilingues
+1. **Pagination** : Max 50 résultats par requête (MCP)
+2. **Performance** : Entscheidsuche ~1.2s, Onlinekommentar ~0.8s
+3. **Format documents** : JSON toujours disponible, PDF parfois absent
+4. **Couverture doctrine** : En développement, pas tous articles commentés
+5. **Langues** : Commentaires pas toujours multilingues
 
 ### Limitations Juridiques
 
@@ -285,193 +673,72 @@ STRATÉGIE
 - Préparation première consultation
 ```
 
+---
+
 ## 📚 Ressources Complémentaires
 
 ### Documentation Détaillée
 
-- **Skill Case Law** : `.opencode/skills/swiss-case-law-research/SKILL.md`
-- **Skill Commentary** : `.opencode/skills/swiss-legal-commentary/SKILL.md`
-- **MCP Tools** : `MCP_TOOLS_REFERENCE.md`
-- **README Principal** : `README.md`
+**MCP Skills** :
+- `.opencode/skills/mcp/swiss-case-law-research/SKILL.md`
+- `.opencode/skills/mcp/swiss-legal-commentary/SKILL.md`
+
+**Recherche Skills** :
+- `.opencode/skills/recherche/recherche-juridique-suisse/SKILL.md` (META)
+- `.opencode/skills/recherche/outils-recherche-juridique/SKILL.md`
+- Autres : Voir `.opencode/skills/recherche/`
+
+**Production Skills** :
+- `.opencode/skills/production/docx/SKILL.md`
+- `.opencode/skills/production/pdf/SKILL.md`
+
+**Projet** :
+- `MCP_TOOLS_REFERENCE.md` - Référence complète des outils MCP
+- `MCP_BENCHMARK_RESULTS.md` - Tests de performance
+- `DECISIONS.md` - Décisions stratégiques du projet
+- `SKILLS_AUDIT.md` - Audit de réorganisation
+- `README.md` - Introduction générale
 
 ### Sites Officiels
 
-- **Entscheidsuche.ch** : https://entscheidsuche.ch
-- **Onlinekommentar.ch** : https://onlinekommentar.ch
-- **Recueil systématique** : https://www.fedlex.admin.ch
-
-### Support Technique
-
-```bash
-# Vérifier état des serveurs MCP
-./manage-mcp.sh status
-
-# Mettre à jour les serveurs
-./manage-mcp.sh update-all
-
-# Aide complète
-./manage-mcp.sh help
-```
-
-## 🎓 Exemples de Cas Complets
-
-### Exemple 1 : Question Travailleur
-
-**Question** : *"Mon employeur m'a licencié une semaine après que je lui ai annoncé ma grossesse. Est-ce légal ?"*
-
-**Workflow** :
-
-1. **DOCTRINE** (commentary)
-   ```
-   Recherche : "Art. 336c CO"
-   Résultat : Licenciement pendant grossesse = présomption d'abus
-   ```
-
-2. **JURISPRUDENCE** (case-law)
-   ```
-   Recherche : "Kündigung Schwangerschaft Sperrfrist"
-   Résultat : 
-   - BGE 127 III 310 : Principe général
-   - BGer 4A_456/2022 : Application récente
-   - Quantum indemnités : 2-6 mois selon durée service
-   ```
-
-3. **RÉPONSE SYNTHÉTIQUE**
-   ```
-   En principe ILLÉGAL (licenciement abusif selon Art. 336c al. 1 lit. c CO)
-   
-   SAUF si :
-   - Motifs graves sans lien avec grossesse
-   - Employeur peut prouver raisons objectives
-   
-   CONSÉQUENCES :
-   - Licenciement reste valable (ne peut être annulé)
-   - Indemnité due : 2 à 6 mois de salaire
-   - Charge de la preuve : employeur doit justifier
-   
-   RECOMMANDATION : 
-   Consulter avocat spécialisé droit du travail
-   Délai : Action dans 180 jours (Art. 336b CO)
-   ```
-
-### Exemple 2 : Question Locataire
-
-**Question** : *"Mon propriétaire veut augmenter le loyer de 15% après avoir rénové la cuisine. Peut-il faire ça ?"*
-
-**Workflow** :
-
-1. **DOCTRINE** (commentary)
-   ```
-   Recherche : "Art. 269a CO" (augmentation loyer)
-   Résultat : Possible si investissements "wertvermehrend" (créateurs de valeur)
-   ```
-
-2. **JURISPRUDENCE** (case-law)
-   ```
-   Recherche : "Mietzinserhöhung wertvermehrend Küche"
-   Résultat :
-   - BGer 4A_177/2020 : Critères investissements
-   - Rénovation simple ≠ augmentation valeur
-   - Limite : 50-70% coûts amortissables sur 15-20 ans
-   ```
-
-3. **RÉPONSE SYNTHÉTIQUE**
-   ```
-   EN PRINCIPE POSSIBLE mais CONDITIONS STRICTES :
-   
-   CRITÈRES (Art. 269a CO) :
-   ✓ Investissements créateurs de valeur (pas simple entretien)
-   ✓ Amélioration objective du logement
-   ✓ Calcul basé sur amortissement (15-20 ans)
-   
-   POUR VOTRE CAS :
-   - Cuisine neuve = possiblement créateur valeur
-   - MAIS 15% semble élevé
-   - Taux admis généralement : 2-5% selon ampleur travaux
-   
-   VOS DROITS :
-   - Demander décompte détaillé travaux
-   - Contester si disproportionné
-   - Formulaire officiel requis (délai 30 jours réponse)
-   
-   RECOMMANDATION :
-   1. Demander justificatif chiffré
-   2. Si montant excessif : contestation commission conciliation
-   3. Consulter ASLOCA ou avocat spécialisé
-   ```
-
-### Exemple 3 : Question Étudiant
-
-**Question** : *"Pour mon mémoire, j'analyse l'évolution de la protection de la personnalité au travail. Peux-tu m'aider ?"*
-
-**Workflow** :
-
-1. **DOCTRINE** (commentary) - Cadre théorique
-   ```
-   Recherche : "Art. 328 CO" + "Art. 28 CC"
-   Résultat : 
-   - Commentaire Art. 328 CO (protection personnalité travailleur)
-   - Commentaire Art. 28 CC (protection personnalité générale)
-   - Auteurs principaux : Rehbinder, Streiff/von Kaenel
-   ```
-
-2. **JURISPRUDENCE** (case-law) - Évolution pratique
-   ```
-   Recherche chronologique :
-   - Années 80-90 : Focus harcèlement physique
-   - Années 2000-10 : Émergence cybersurveillance
-   - Années 2010-24 : Protection données, réseaux sociaux
-   
-   Arrêts clés :
-   - BGE 130 III 28 (2003) : Surveillance email
-   - BGE 143 II 146 (2017) : Caméras lieu travail
-   - BGer 4A_682/2022 : Réseaux sociaux
-   ```
-
-3. **RÉPONSE ACADÉMIQUE**
-   ```
-   STRUCTURE MÉMOIRE SUGGÉRÉE :
-   
-   I. CADRE JURIDIQUE
-      A. Fondements constitutionnels (Art. 13 Cst.)
-      B. Protection civile (Art. 28 CC)
-      C. Protection travail (Art. 328 CO)
-   
-   II. ÉVOLUTION JURISPRUDENTIELLE (analyse chronologique)
-      A. Phase 1 (1980-2000) : Protection physique
-      B. Phase 2 (2000-2015) : Ère numérique
-      C. Phase 3 (2015-2024) : Big data et IA
-   
-   III. ENJEUX ACTUELS
-      A. Télétravail et vie privée
-      B. Surveillance algorithmique
-      C. Équilibre intérêts employeur/employé
-   
-   BIBLIOGRAPHIE :
-   - Doctrine : Commentaires onlinekommentar.ch
-   - Jurisprudence : BGE + BGer sélection via entscheidsuche.ch
-   - Législation : CO, CC, LPD
-   ```
-
-## ✅ Checklist Recherche de Qualité
-
-Avant de finaliser votre réponse, vérifiez :
-
-- [ ] Sources primaires citées (BGE, BGer, commentaires)
-- [ ] Références complètes (date, tribunal, auteur)
-- [ ] Langue appropriée (même langue que question ou traduit)
-- [ ] Hiérarchie respectée (BGE > BGer > cantonal > doctrine)
-- [ ] Actualité vérifiée (date des décisions/commentaires)
-- [ ] Nuances mentionnées (exceptions, débats doctrinaux)
-- [ ] Limitations indiquées (avis non-juridique, consulter avocat)
-- [ ] Liens fournis vers documents originaux
-- [ ] Structure claire et logique
-- [ ] Application au cas de l'utilisateur
+- **Entscheidsuche.ch** : https://entscheidsuche.ch (jurisprudence)
+- **Fedlex** : https://www.fedlex.admin.ch (législation fédérale)
+- **BGer** : https://www.bger.ch (Tribunal fédéral)
+- **Onlinekommentar** : https://onlinekommentar.ch (doctrine)
 
 ---
 
-**Version** : 1.0.0  
-**Dernière mise à jour** : Février 2026  
-**Pour** : Legal Assistant Workspace  
+## 📊 Statistiques du Projet
 
-**Note** : Ce guide est un document de référence. Consultez les SKILL.md détaillés pour informations complètes.
+**Skills Totaux** : 22  
+**Par Catégorie** :
+- MCP : 2 skills (opérationnels, <2s)
+- Recherche : 13 skills (complets)
+- Analyse : 0 skills (à créer en Phase 3)
+- Rédaction : 0 skills (à créer en Phase 3-4)
+- Production : 4 skills (opérationnels)
+- Anthropic : 3 skills (outils de dev)
+
+**Performance MCP** :
+- Entscheidsuche : ~1.2s (1.8M+ décisions)
+- Onlinekommentar : ~0.8s (commentaires doctrinaux)
+
+**Couverture** : 80% des tâches juridiques répétitives (objectif)
+
+---
+
+## 🔄 Mises à Jour
+
+**Version** : 2.0 (réorganisé)  
+**Date** : 2026-02-25  
+**Changements majeurs** :
+- Structure hiérarchique (6 catégories)
+- 10 skills non-juridiques supprimés
+- Performance MCP validée (<2s)
+- Documentation mise à jour
+
+**Prochaine mise à jour** : Ajout des skills d'analyse et rédaction (Phase 3)
+
+---
+
+**Pour toute question** : Consulter `PROJECT.md` ou `TODO.md`
