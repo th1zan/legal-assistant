@@ -1,7 +1,7 @@
 ---
 name: swiss-case-law-research
 description: Recherche structurée dans la jurisprudence suisse via Entscheidsuche.ch. Utiliser cette skill quand l'utilisateur cherche des arrêts du Tribunal fédéral, de la jurisprudence cantonale, ou des précédents judiciaires sur un sujet juridique suisse. Accès à plus d'1 million de décisions de justice.
-version: 1.1
+version: 1.2
 author: SwissLawAI
 tags: [jurisprudence, recherche, tribunal-federal, mcp, entscheidsuche]
 ---
@@ -34,6 +34,49 @@ Invoquer `@swiss-case-law-research` quand l'utilisateur demande:
 
 ## Workflow de Recherche
 
+> **IMPORTANT** : Voir `.opencode/instructions/research-persistence.md` pour les règles de sauvegarde obligatoires.
+
+### Phase 0: Initialisation (OBLIGATOIRE)
+
+**AVANT toute recherche**, créer la structure de persistance :
+
+1. **Déterminer le sujet court** (max 30 caractères, kebab-case)
+   - Exemple : `protection-personnalite-travail`
+
+2. **Créer le dossier de recherche**
+   ```bash
+   mkdir -p ./LOGS/recherche/YYYY-MM-DD_HHhMM_[sujet-court]/documents
+   ```
+
+3. **Créer recherche.json**
+   ```json
+   {
+     "id": "[uuid]",
+     "created": "[ISO timestamp]",
+     "subject": "[description courte]",
+     "source": "entscheidsuche",
+     "queries": [],
+     "selected_documents": [],
+     "status": "in_progress"
+   }
+   ```
+
+4. **Créer resultats.md avec en-tête**
+   ```markdown
+   # Résultats de recherche - [Sujet]
+   
+   **Dossier** : ./LOGS/recherche/[path]/
+   **Source** : Entscheidsuche.ch
+   **Créé** : [date]
+   
+   ---
+   ```
+
+5. **Informer l'utilisateur**
+   > "Recherche initialisée. Résultats sauvegardés dans `./LOGS/recherche/[path]/`"
+
+---
+
 ### Phase 1: Exploration
 
 1. **Comprendre la demande**
@@ -49,6 +92,11 @@ Invoquer `@swiss-case-law-research` quand l'utilisateur demande:
    }
    ```
 
+3. **IMMÉDIATEMENT après l'appel MCP** :
+   - **Sauvegarder** les résultats dans `resultats.md`
+   - **Mettre à jour** `recherche.json` avec la query et total_hits
+   - **Résumer** en contexte (top 5 + observations, pas tout)
+
 ### Phase 2: Analyse des Résultats
 
 1. **Évaluer la pertinence**
@@ -59,6 +107,8 @@ Invoquer `@swiss-case-law-research` quand l'utilisateur demande:
    - >500 résultats → affiner
    - <10 résultats → élargir
    - 10-100 résultats → approfondir
+
+3. **Sauvegarde** : Les résultats sont déjà sur disque (Phase 1)
 
 ### Phase 3: Affinement
 
@@ -72,6 +122,10 @@ Invoquer `@swiss-case-law-research` quand l'utilisateur demande:
 - Essayer synonymes juridiques
 - Rechercher en plusieurs langues
 
+**Après chaque nouvelle requête** :
+- **Append** les nouveaux résultats dans `resultats.md`
+- **Ajouter** la query dans `recherche.json.queries[]`
+
 ### Phase 4: Récupération des Documents
 
 1. Sélectionner **3-5 décisions** les plus pertinentes
@@ -84,12 +138,18 @@ Invoquer `@swiss-case-law-research` quand l'utilisateur demande:
    }
    ```
 
+4. **Sauvegarder chaque document** dans `documents/[signature].json`
+5. **Mettre à jour** `selected_documents` dans `recherche.json`
+6. **Créer/màj** `selection.md` avec résumé des documents retenus
+
 ### Phase 5: Synthèse
 
 1. Structurer la réponse selon le template
 2. Citer correctement (signature, date, tribunal)
 3. Appliquer au cas de l'utilisateur
 4. Suggérer recherches complémentaires
+5. **Créer** `synthese.md` avec l'analyse finale
+6. **Marquer** `status: "completed"` dans `recherche.json`
 
 ---
 
@@ -173,20 +233,25 @@ Liste tous les tribunaux disponibles avec statistiques.
 
 ### ✅ DO
 
-1. **Commencer large, affiner progressivement**
-2. **Utiliser l'allemand en priorité** (70% des décisions)
-3. **Limiter les résultats** (20-30 exploration, max 50)
-4. **Privilégier décisions récentes** (5 dernières années)
-5. **Citer correctement** (signature, date, tribunal)
-6. **Structurer la réponse** (vue d'ensemble, décisions clés, synthèse)
+1. **Créer le dossier de recherche AVANT le premier appel MCP** (Phase 0)
+2. **Sauvegarder IMMÉDIATEMENT après chaque appel MCP**
+3. **Commencer large, affiner progressivement**
+4. **Utiliser l'allemand en priorité** (70% des décisions)
+5. **Limiter les résultats** (20-30 exploration, max 50)
+6. **Privilégier décisions récentes** (5 dernières années)
+7. **Citer correctement** (signature, date, tribunal)
+8. **Structurer la réponse** (vue d'ensemble, décisions clés, synthèse)
+9. **Résumer en contexte**, référencer les fichiers pour les détails
 
 ### ❌ DON'T
 
-1. **Ne pas récupérer trop de documents** (max 5 complets)
-2. **Ne pas ignorer la hiérarchie** (BGE > BGer > Cantonal)
-3. **Ne pas traduire littéralement** (utiliser termes juridiques natifs)
-4. **Ne pas sur-généraliser** (vérifier cohérence avec autres arrêts)
-5. **Ne pas oublier les limites** (avertissement obligatoire)
+1. **Ne pas garder tous les résultats bruts en contexte** (sauvegarder sur disque)
+2. **Ne pas attendre la fin pour sauvegarder** (après CHAQUE appel)
+3. **Ne pas récupérer trop de documents** (max 5 complets)
+4. **Ne pas ignorer la hiérarchie** (BGE > BGer > Cantonal)
+5. **Ne pas traduire littéralement** (utiliser termes juridiques natifs)
+6. **Ne pas sur-généraliser** (vérifier cohérence avec autres arrêts)
+7. **Ne pas oublier les limites** (avertissement obligatoire)
 
 → Voir `TRAPS.md` pour les 10 pièges détaillés
 
@@ -250,4 +315,5 @@ Ces informations ne constituent pas un avis juridique.
 
 ---
 
-*Version 1.1 — Février 2026*
+*Version 1.2 — Février 2026*
+*Ajout: Persistance des recherches (Phase 0, sauvegarde après chaque appel MCP)*

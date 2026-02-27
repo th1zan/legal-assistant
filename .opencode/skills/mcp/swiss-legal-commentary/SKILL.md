@@ -1,6 +1,7 @@
 ---
 name: swiss-legal-commentary
 description: Recherche structurée dans les commentaires juridiques suisses via Onlinekommentar.ch. Utiliser cette skill quand l'utilisateur demande d'expliquer un article de loi, cherche la doctrine juridique, ou veut comprendre l'interprétation académique d'une disposition légale suisse. Commentaires Open Access en DE, FR, IT, EN.
+version: 2.1.0
 ---
 
 # Swiss Legal Commentary Research
@@ -88,6 +89,49 @@ Récupère le contenu complet d'un commentaire spécifique.
 
 ## Workflow Recommandé
 
+> **IMPORTANT** : Voir `.opencode/instructions/research-persistence.md` pour les règles de sauvegarde obligatoires.
+
+### Phase 0 : Initialisation (OBLIGATOIRE)
+
+**AVANT toute recherche**, créer la structure de persistance :
+
+1. **Déterminer le sujet court** (max 30 caractères, kebab-case)
+   - Exemple : `art-328-co-commentaire`
+
+2. **Créer le dossier de recherche**
+   ```bash
+   mkdir -p ./LOGS/recherche/YYYY-MM-DD_HHhMM_[sujet-court]/documents
+   ```
+
+3. **Créer recherche.json**
+   ```json
+   {
+     "id": "[uuid]",
+     "created": "[ISO timestamp]",
+     "subject": "[description courte]",
+     "source": "onlinekommentar",
+     "queries": [],
+     "selected_documents": [],
+     "status": "in_progress"
+   }
+   ```
+
+4. **Créer resultats.md avec en-tête**
+   ```markdown
+   # Résultats de recherche - [Sujet]
+   
+   **Dossier** : ./LOGS/recherche/[path]/
+   **Source** : Onlinekommentar.ch
+   **Créé** : [date]
+   
+   ---
+   ```
+
+5. **Informer l'utilisateur**
+   > "Recherche initialisée. Résultats sauvegardés dans `./LOGS/recherche/[path]/`"
+
+---
+
 ### Phase 1 : Identification
 - Question = article spécifique ou thème général ?
 - Langue préférée ?
@@ -102,6 +146,11 @@ Récupère le contenu complet d'un commentaire spécifique.
 }
 ```
 
+**IMMÉDIATEMENT après l'appel MCP** :
+- **Sauvegarder** les résultats dans `resultats.md`
+- **Mettre à jour** `recherche.json` avec la query
+- **Résumer** en contexte (top 5 + observations, pas tout)
+
 **Évaluation** :
 - 0 résultats → élargir recherche
 - 1-10 résultats → parfait
@@ -111,6 +160,9 @@ Récupère le contenu complet d'un commentaire spécifique.
 - Maximum 3-5 commentaires à analyser
 - Privilégier : récents, auteurs reconnus, pertinents
 - Récupérer contenu complet via `get_commentary_by_id`
+- **Sauvegarder chaque commentaire** dans `documents/[id].json`
+- **Mettre à jour** `selected_documents` dans `recherche.json`
+- **Créer/màj** `selection.md` avec résumé des commentaires retenus
 
 ### Phase 4 : Synthèse
 - Vue d'ensemble du sujet
@@ -118,6 +170,8 @@ Récupère le contenu complet d'un commentaire spécifique.
 - Consensus et débats doctrinaux
 - Application au cas de l'utilisateur
 - Citation correcte (auteur, titre, date, lien)
+- **Créer** `synthese.md` avec l'analyse finale
+- **Marquer** `status: "completed"` dans `recherche.json`
 
 ## Combinaison avec Jurisprudence
 
@@ -157,14 +211,19 @@ Workflow intégré recommandé :
 ## Meilleures Pratiques
 
 ### À FAIRE
+- **Créer le dossier de recherche AVANT le premier appel MCP** (Phase 0)
+- **Sauvegarder IMMÉDIATEMENT après chaque appel MCP**
 - Commencer spécifique si article connu
 - Vérifier les auteurs (reconnus = qualité)
 - Lire le texte de loi d'abord
 - Noter les références jurisprudentielles
 - Privilégier commentaires récents (`sort: "-date"`)
 - Citer correctement (auteur, titre, date, lien)
+- **Résumer en contexte**, référencer les fichiers pour les détails
 
 ### À ÉVITER
+- **Garder tous les résultats bruts en contexte** (sauvegarder sur disque)
+- **Attendre la fin pour sauvegarder** (après CHAQUE appel)
 - Ignorer la disponibilité linguistique
 - Se limiter à un seul commentaire
 - Négliger les éditeurs (validation académique)
@@ -190,6 +249,7 @@ Workflow intégré recommandé :
 
 ---
 
-**Version** : 2.0.0  
+**Version** : 2.1.0  
 **Dernière mise à jour** : Février 2026  
 **Auteur** : Legal Assistant Workspace
+**Changelog** : Ajout persistance des recherches (Phase 0, sauvegarde après chaque appel MCP)
