@@ -1,7 +1,7 @@
 ---
 name: swiss-case-law-research
 description: Recherche structurée dans la jurisprudence suisse via Entscheidsuche.ch. Utiliser cette skill quand l'utilisateur cherche des arrêts du Tribunal fédéral, de la jurisprudence cantonale, ou des précédents judiciaires sur un sujet juridique suisse. Accès à plus d'1 million de décisions de justice.
-version: 1.2
+version: 1.4
 author: SwissLawAI
 tags: [jurisprudence, recherche, tribunal-federal, mcp, entscheidsuche]
 ---
@@ -77,6 +77,49 @@ Invoquer `@swiss-case-law-research` quand l'utilisateur demande:
 
 ---
 
+### Phase 0.5: Clarification du Scope (OBLIGATOIRE)
+
+**AVANT toute recherche**, vérifier que le périmètre est explicite.
+
+1. **Analyser la demande** - Le scope est-il clair ?
+   - ✅ "arrêts du TF sur..." → scope = CH_BGer
+   - ✅ "jurisprudence vaudoise" → scope = canton VD
+   - ❌ "cherche des décisions sur..." → scope NON SPÉCIFIÉ
+
+2. **Si scope NON SPÉCIFIÉ** → Demander à l'utilisateur :
+
+   > **Quel périmètre de recherche souhaitez-vous ?**
+   >
+   > **Tribunal fédéral (TF)** :
+   > - ATF publiés uniquement (jurisprudence de principe)
+   > - Tous les arrêts TF (publiés + non publiés)
+   >
+   > **Tribunaux fédéraux spécialisés** :
+   > - TAF (Tribunal administratif fédéral)
+   > - TPF (Tribunal pénal fédéral)
+   >
+   > **Jurisprudence cantonale** :
+   > - Canton spécifique (GE, VD, ZH, BE...)
+   > - Tous les cantons
+   >
+   > **Corpus complet** :
+   > - Tout (740'000+ décisions) - recommandé uniquement pour recherche exploratoire
+
+3. **Mapper la réponse aux filtres MCP** :
+
+   | Choix utilisateur | Filtre MCP |
+   |-------------------|------------|
+   | ATF publiés | `court: "CH_BGE"` |
+   | Tous arrêts TF | `court: "CH_BGer"` |
+   | TAF | `court: "CH_BVGE"` |
+   | TPF | `court: "CH_BStGer"` |
+   | Canton X | `canton: "X"` |
+   | Tout | (aucun filtre) |
+
+4. **Confirmer** avant de lancer la recherche
+
+---
+
 ### Phase 1: Exploration
 
 1. **Comprendre la demande**
@@ -114,13 +157,14 @@ Invoquer `@swiss-case-law-research` quand l'utilisateur demande:
 
 **Si TROP de résultats:**
 - Ajouter termes spécifiques (AND)
-- Filtrer par juridiction (`court:CH_BGer`)
+- **Utiliser les filtres MCP** : `court`, `canton`, `language`, `dateFrom`
 - Restreindre la période
 
 **Si PAS ASSEZ de résultats:**
 - Utiliser wildcards (`protect*`)
 - Essayer synonymes juridiques
 - Rechercher en plusieurs langues
+- **Élargir les filtres** (retirer canton ou court)
 
 **Après chaque nouvelle requête** :
 - **Append** les nouveaux résultats dans `resultats.md`
@@ -180,6 +224,22 @@ Invoquer `@swiss-case-law-research` quand l'utilisateur demande:
 
 ## Syntaxe de Recherche
 
+### Filtres MCP (recommandés)
+
+Utiliser les paramètres de filtrage directement dans l'appel MCP :
+
+| Paramètre | Description | Exemple |
+|-----------|-------------|---------|
+| `canton` | Code canton | `"CH"`, `"VD"`, `"GE"` |
+| `court` | Code tribunal | `"CH_BGer"`, `"CH_BVGE"` |
+| `language` | Langue | `"de"`, `"fr"`, `"it"` |
+| `dateFrom` | Date début | `"2020-01-01"` |
+| `dateTo` | Date fin | `"2024-12-31"` |
+
+**Note** : Les filtres MCP sont plus fiables que la syntaxe texte `court:CH_BGer`.
+
+### Syntaxe textuelle (dans query)
+
 | Opérateur | Syntaxe | Exemple |
 |-----------|---------|---------|
 | ET | `AND` | `Datenschutz AND Arbeitsrecht` |
@@ -187,18 +247,40 @@ Invoquer `@swiss-case-law-research` quand l'utilisateur demande:
 | NON | `-` | `Datenschutz -Strafrecht` |
 | Phrase | `"..."` | `"protection personnalité"` |
 | Wildcard | `*` | `Kündig*` |
-| Champ | `field:value` | `court:CH_BGer` |
 
 ---
 
 ## Commandes MCP
 
 ### search_case_law
+Recherche avec filtres optionnels :
 ```json
 {
-  "query": "string (required)",
+  "query": "string (required) - Termes de recherche",
   "size": "number (default: 10, max: 50)",
-  "from": "number (default: 0)"
+  "from": "number (default: 0) - Pagination",
+  "canton": "string (optional) - Code canton: 'CH', 'VD', 'GE', 'ZH'...",
+  "court": "string (optional) - Code tribunal: 'CH_BGer', 'CH_BVGE', 'VD_TC'...",
+  "language": "'de' | 'fr' | 'it' (optional) - Langue du document",
+  "dateFrom": "string (optional) - Date début YYYY-MM-DD",
+  "dateTo": "string (optional) - Date fin YYYY-MM-DD"
+}
+```
+
+**Exemples avec filtres :**
+```json
+// Recherche TF uniquement, français, depuis 2020
+{
+  "query": "responsabilité civile médicale",
+  "court": "CH_BGer",
+  "language": "fr",
+  "dateFrom": "2020-01-01"
+}
+
+// Recherche jurisprudence genevoise
+{
+  "query": "bail commercial",
+  "canton": "GE"
 }
 ```
 
@@ -212,7 +294,18 @@ Invoquer `@swiss-case-law-research` quand l'utilisateur demande:
 ```
 
 ### list_courts
-Liste tous les tribunaux disponibles avec statistiques.
+Liste tous les tribunaux disponibles avec statistiques (données temps réel).
+
+### list_cantons
+Liste tous les cantons avec nombre de documents. Utile pour découvrir les codes cantons.
+
+### list_tribunals
+Liste les tribunaux, optionnellement filtrés par canton :
+```json
+{
+  "canton": "string (optional) - ex: 'CH', 'VD', 'GE'"
+}
+```
 
 ---
 
@@ -242,6 +335,7 @@ Liste tous les tribunaux disponibles avec statistiques.
 7. **Citer correctement** (signature, date, tribunal)
 8. **Structurer la réponse** (vue d'ensemble, décisions clés, synthèse)
 9. **Résumer en contexte**, référencer les fichiers pour les détails
+10. **Toujours clarifier le scope** avant la première recherche (Phase 0.5)
 
 ### ❌ DON'T
 
@@ -252,6 +346,7 @@ Liste tous les tribunaux disponibles avec statistiques.
 5. **Ne pas traduire littéralement** (utiliser termes juridiques natifs)
 6. **Ne pas sur-généraliser** (vérifier cohérence avec autres arrêts)
 7. **Ne pas oublier les limites** (avertissement obligatoire)
+8. **Ne jamais lancer une recherche sans scope explicite** (Phase 0.5)
 
 → Voir `TRAPS.md` pour les 10 pièges détaillés
 
@@ -315,5 +410,8 @@ Ces informations ne constituent pas un avis juridique.
 
 ---
 
-*Version 1.2 — Février 2026*
-*Ajout: Persistance des recherches (Phase 0, sauvegarde après chaque appel MCP)*
+*Version 1.4 — Février 2026*
+*Ajout: Phase 0.5 clarification du scope obligatoire avant recherche*
+
+*Version 1.3 — Février 2026*
+*Ajout: Filtres MCP (canton, court, language, dateFrom, dateTo), nouveaux tools list_cantons et list_tribunals*
